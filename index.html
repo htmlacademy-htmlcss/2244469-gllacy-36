@@ -2,11 +2,60 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>Интернет-магазин Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="page-header">
+      <a href="#" class="navigation-page-logo">
+        <img src="" width="137" height="56" alt="Логотип интернет-магазина Глейси.">
+      </a>
+      <nav class="site-navigation">
+        <ul class="products-list">
+          <li class="products-item">
+            <a class="products-item-link" href="#">Каталог</a>
+            <div class="catalog-popover-wrapper">
+              <ul class="catalog-menu">
+                <li class="catalog-menu-item">
+                  <a class="catalog-menu-link">Новинки</a>
+                </li>
+                <li class="catalog-menu-item">
+                  <a class="catalog-menu-link">Сливочное</a>
+                </li>
+                <li class="catalog-menu-item">
+                  <a class="catalog-menu-link">Щербеты</a>
+                </li>
+                <li class="catalog-menu-item">
+                  <a class="catalog-menu-link">Фруктовый лед</a>
+                </li>
+                <li class="catalog-menu-item">
+                  <a class="catalog-menu-link">Мелорин</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="products-item">
+            <a href="#" class="products-item-link">Доставка и оплата</a>
+          </li>
+          <li class="products-item">
+            <a href="#" class="products-item-link">О компании</a>
+          </li>
+        </ul>
+        <a href="tel:+7800555-86-28" class="contacts-phone">+7 800 555-86-28</a>
+        <ul class="user-navigation-list">
+          <li class="navigation-item">
+            <a href="#" class="search-icon">
+              <form class="search-field" action="https://echo.htmlacademy.ru/" method="get">
+                <input class="field" type="search" id="search-field" name="field" placeholder="Поиск по сайту"
+                  aria-label="Поле поиска по сайту." required>
+                <label class="search-field-label" for="search-field"></label>
+              </form>
+            </a>
+            <span class="visually-hidden">Кнопка поиска.</span>
+          </li>
+          <li class="navigation-item">Вход</li>
+          <li class="navigation-item"></li>
+        </ul>
+      </nav>
+    </header>
   </body>
 </html>
