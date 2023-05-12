@@ -19,7 +19,7 @@
               <a class="catalog-menu-link new-products" href="#">Новинки</a>
               <ul class="catalog-menu">
                 <li class="catalog-menu-item">
-                  <a class="catalog-menu-link" href="#">Сливочное</a>
+                  <a class="catalog-menu-link" href="catalog.html">Сливочное</a>
                 </li>
                 <li class="catalog-menu-item">
                   <a class="catalog-menu-link" href="#">Щербеты</a>
@@ -57,6 +57,9 @@
                 <input class="field" type="search" id="search-field" name="field" placeholder="Поиск по сайту"
                   aria-label="Поле поиска по сайту." required>
                 <label class="search-field-label" for="search-field"></label>
+                <button class="search-reset-button" type="reset">
+                  <span class="visually-hidden">Сбросить.</span>
+                </button>
               </form>
             </div>
           </li>
@@ -495,8 +498,8 @@
           <input type="text" class="form-field-input" id="name-field" placeholder="Имя и фамилия" required>
           <label for="email-field" class="form-field-label visually-hidden">Введите email.</label>
           <input type="email" class="form-field-input" id="email-field" placeholder="email@example.com" required>
-          <label for="feedback-text-field" class="form-field-label visually-hidden">Введите сообщение.</label>
-          <input type="text" class="form-field-input" id="feedback-text-field" placeholder="В свободной форме" required>
+          <label for="feedback-textarea" class="form-field-label visually-hidden">Введите сообщение.</label>
+          <textarea class="form-textarea" id="feedback-textarea" name="message" placeholder="В свободной форме" required>
           <button class="submit-button" type="submit">Отправить</button>
         </form>
         <button class="modal-close" type="button">
