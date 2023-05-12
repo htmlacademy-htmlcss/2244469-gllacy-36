@@ -117,9 +117,9 @@
                         <h3 class="cart-items-title">Малинка</h3>
                         <p class="cart-items-info">1 кг х 310 ₽</p>
                         <p class="cart-items-price">310 ₽</p>
-                        <button class="delete-cart-item" type="button" aria-label="Удалить товар из корзины."></button>
                       </a>
                       <input type="hidden" name="order-item" value="Мороженое малиновое">
+                      <button class="delete-cart-item" type="button" aria-label="Удалить товар из корзины."></button>
                     </li>
                     <li class="cart-item">
                       <a class="cart-items-link" href="#">
@@ -128,9 +128,9 @@
                         <h3 class="cart-items-title">Бабл-гам</h3>
                         <p class="cart-items-info">1,5 кг х 320 ₽</p>
                         <p class="cart-items-price">480 ₽</p>
-                        <button class="delete-cart-item" type="button" aria-label="Удалить товар из корзины."></button>
                       </a>
                       <input type="hidden" name="order-item" value="Мороженое бабл-гам">
+                      <button class="delete-cart-item" type="button" aria-label="Удалить товар из корзины."></button>
                     </li>
                   </ul>
                   <button class="submit-order">Оформить заказ</button>
@@ -174,14 +174,13 @@
         </div>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-first-group">
-            <legend class="catalog-filter-group-title">Цена:
-              <label>
-                <input class="filter-price-input min-price" type="number" value="100" min="0">₽
-              </label>
-              <label>
-                - <input class="filter-price-input max-price" type="number" value="500" min="0">₽
-              </label>
-            </legend>
+            <legend class="catalog-filter-group-title">Цена:</legend>
+            <label>
+              <input class="filter-price-input min-price" type="number" value="100" min="0">₽
+            </label>
+            <label>
+              - <input class="filter-price-input max-price" type="number" value="500" min="0">₽
+            </label>
             <div class="price-range-wrapper">
               <div class="range-scale">
                 <div class="range-bar">
@@ -196,58 +195,56 @@
             </div>
           </fieldset>
           <fieldset class="catalog-filter-second-group">
-            <legend class="catalog-filter-group-title">Жирность:
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <input type="radio" class="filter-radio visually-hidden" id="fat-content-zero"
-                    name="fat-content-percentage" value="0">
-                  <label for="fat-content-zero" class="radio-button">0%</label>
-                </li>
-                <li class="catalog-filter-item">
-                  <input type="radio" class="filter-radio visually-hidden" id="fat-content-max-ten"
-                    name="fat-content-percentage" value="max10" checked>
-                  <label for="fat-content-max-ten" class="radio-button">до 10%</label>
-                </li>
-                <li class="catalog-filter-item">
-                  <input type="radio" class="filter-radio visually-hidden" id="fat-content-max-thirty"
-                    name="fat-content-percentage" value="max30">
-                  <label for="fat-content-max-thirty" class="radio-button">до 30%</label>
-                </li>
-                <li class="catalog-filter-item">
-                  <input type="radio" class="filter-radio visually-hidden" id="fat-content-min-thirty"
-                    name="fat-content-percentage" value="min30">
-                  <label for="fat-content-min-thirty" class="radio-button">выше 30%</label>
-                </li>
-              </ul>
-            </legend>
+            <legend class="catalog-filter-group-title">Жирность:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <input type="radio" class="filter-radio visually-hidden" id="fat-content-zero"
+                  name="fat-content-percentage" value="0">
+                <label for="fat-content-zero" class="radio-button">0%</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input type="radio" class="filter-radio visually-hidden" id="fat-content-max-ten"
+                  name="fat-content-percentage" value="max10" checked>
+                <label for="fat-content-max-ten" class="radio-button">до 10%</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input type="radio" class="filter-radio visually-hidden" id="fat-content-max-thirty"
+                  name="fat-content-percentage" value="max30">
+                <label for="fat-content-max-thirty" class="radio-button">до 30%</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input type="radio" class="filter-radio visually-hidden" id="fat-content-min-thirty"
+                  name="fat-content-percentage" value="min30">
+                <label for="fat-content-min-thirty" class="radio-button">выше 30%</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="catalog-filter-third-group">
-            <legend class="catalog-filter-group-title">Наполнители:
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <input type="checkbox" class="filter-checkbox visually-hidden" id="chocolate" name="chocolate"
-                    checked>
-                  <label for="chocolate" class="checkbox-button">шоколадные</label>
-                </li>
-                <li class="catalog-filter-item">
-                  <input type="checkbox" class="filter-checkbox visually-hidden" id="sugar-topping" name="sugar-topping"
-                    checked>
-                  <label for="sugar-topping" class="checkbox-button">сахарные посыпки</label>
-                </li>
-                <li class="catalog-filter-item">
-                  <input type="checkbox" class="filter-checkbox visually-hidden" id="fruits" name="fruits">
-                  <label for="fruits" class="checkbox-button">фрукты</label>
-                </li>
-                <li class="catalog-filter-item">
-                  <input type="checkbox" class="filter-checkbox visually-hidden" id="syrops" name="syrops">
-                  <label for="syrops" class="checkbox-button">сиропы</label>
-                </li>
-                <li class="catalog-filter-item">
-                  <input type="checkbox" class="filter-checkbox visually-hidden" id="jams" name="jams">
-                  <label for="jams" class="checkbox-button">джемы</label>
-                </li>
-              </ul>
-            </legend>
+            <legend class="catalog-filter-group-title">Наполнители:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <input type="checkbox" class="filter-checkbox visually-hidden" id="chocolate" name="chocolate" checked>
+                <label for="chocolate" class="checkbox-button">шоколадные</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input type="checkbox" class="filter-checkbox visually-hidden" id="sugar-topping" name="sugar-topping"
+                  checked>
+                <label for="sugar-topping" class="checkbox-button">сахарные посыпки</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input type="checkbox" class="filter-checkbox visually-hidden" id="fruits" name="fruits">
+                <label for="fruits" class="checkbox-button">фрукты</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input type="checkbox" class="filter-checkbox visually-hidden" id="syrops" name="syrops">
+                <label for="syrops" class="checkbox-button">сиропы</label>
+              </li>
+              <li class="catalog-filter-item">
+                <input type="checkbox" class="filter-checkbox visually-hidden" id="jams" name="jams">
+                <label for="jams" class="checkbox-button">джемы</label>
+              </li>
+            </ul>
+
           </fieldset>
           <button class="filter-submit-button" type="submit">Применить</button>
         </form>
@@ -571,11 +568,10 @@
         <a class="developer-logo" href="https://htmlacademy.ru/">
           <img class="developer-logo" src="images/logos/htmlacademy-logo.svg" width="93" height="27"
             alt="Логотип разработчика: html academy.">
-          <p class="developer-text">Сделано в <a class="developer-site" href="https://htmlacademy.ru/">.html academy</a>
-            © 2021</p>
         </a>
+        <p class="developer-text">Сделано в <a class="developer-site" href="https://htmlacademy.ru/">.html academy</a>
+          © 2021</p>
       </div>
     </footer>
   </body>
-
 </html>
