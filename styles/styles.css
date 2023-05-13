@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+.page-body {
+  margin: 0;
+  padding: 0;
+  min-width: 1170px;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  background-color: #FEAFC3;
+  color: #565C66;
+}
+
+.slider-blue {
+  background-color: #69A9FF;
+}
+
+.slider-yellow {
+  background-color: #FCC850;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.page-header {
+  display: flex;
+  margin: 0;
+  padding: 24px 0;
+}
+
+.navigation-page-logo {
+  margin: 0 16px 0 0;
+}
+
+.site-navigation {
+  display: flex;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 422px;
+  max-width: 462px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
