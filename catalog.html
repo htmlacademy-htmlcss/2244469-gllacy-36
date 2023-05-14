@@ -14,14 +14,13 @@
         </a>
         <nav class="site-navigation">
           <ul class="products-list">
-            <li class="products-item">
-              <a class="products-item-link" href="#">Каталог</a>
+            <li class="products-item catalog-menu">
+              <a class="products-item-link catalog-menu-button" href="#">Каталог</a>
               <div class="catalog-popover-wrapper">
-                <h2 class="visually-hidden">Меню каталога.</h2>
-                <a class="catalog-menu-link new-products" href="#">Новинки</a>
+                <h2 class="new-products">Новинки</h2>
                 <ul class="catalog-menu">
                   <li class="catalog-menu-item">
-                    <a class="catalog-menu-link" href="#">Сливочное</a>
+                    <a class="catalog-menu-link" href="catalog.html">Сливочное</a>
                   </li>
                   <li class="catalog-menu-item">
                     <a class="catalog-menu-link" href="#">Щербеты</a>
@@ -52,13 +51,12 @@
                     d="M2.66 8.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z"
                     clip-rule="evenodd" />
                 </svg>
+                <span class="visually-hidden">Кнопка поиска по сайту.</span>
               </a>
-              <span class="visually-hidden">Кнопка поиска по сайту.</span>
               <div class="search-field-wrapper">
-                <form class="search-field" action="https://echo.htmlacademy.ru/" method="get">
-                  <input class="field" type="search" id="search-field" name="field" placeholder="Поиск по сайту"
-                    aria-label="Поле поиска по сайту." required>
-                  <label class="search-field-label" for="search-field"></label>
+                <form class="search-field-form" action="https://echo.htmlacademy.ru/" method="get">
+                  <input class="field" type="search" id="search-field" name="field" placeholder="Поиск по сайту" required>
+                  <label class="visually-hidden" for="search-field">Поле поиска по сайту.</label>
                   <button class="search-reset-button" type="reset">
                     <span class="visually-hidden">Сбросить.</span>
                   </button>
@@ -75,7 +73,6 @@
                 </svg>
                 Вход
               </a>
-              <span class="visually-hidden">Кнопка входа в личный кабинет.</span>
               <div class="login-window-popover">
                 <h2>Личный кабинет</h2>
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -101,13 +98,13 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="cart-items cart-not-empty">2 товара</span>
+                <span class="cart-items">2 товара</span>
                 <span class="cart-items cart-empty">Нет товаров</span>
               </a>
               <span class="visually-hidden">Кнопка корзины.</span>
               <div class="cart-popover">
                 <h2>Корзина</h2>
-                <div class="cart-popover-wrapper cart-not-empty">
+                <div class="cart-popover-wrapper">
                   <form class="order-checkout" action="https://echo.htmlacademy.ru/" method="post">
                     <ul class="cart-items-list">
                       <li class="cart-item">
@@ -163,23 +160,23 @@
         </header>
         <section class="sorting-filters">
           <h2 class="visually-hidden">Сортировка и фильтры</h2>
-          <div class="sorting-wrapper">
-            <p class="sorting-heading">Сортировка:</p>
-            <span class="visually-hidden">Выбор параметров сортировки товаров.</span>
-            <select class="sort-by">
-              <option value="popular">по популярности</option>
-              <option value="cheap">по возрастанию цены</option>
-              <option value="expensive">по убыванию цены</option>
-            </select>
-          </div>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter">
+              <legend class="catalog-filter-group-title">Сортировка:</legend>
+              <label for="sorting-options" class="visually-hidden">Выбор параметров сортировки товаров.</label>
+              <select class="sort-by" name="sorting-options" id="sorting-options">
+                <option value="popular">по популярности</option>
+                <option value="cheap">по возрастанию цены</option>
+                <option value="expensive">по убыванию цены</option>
+              </select>
+            </fieldset>
             <fieldset class="catalog-filter-first-group">
               <legend class="catalog-filter-group-title">Цена:</legend>
               <label>
-                <input class="filter-price-input min-price" type="number" value="100" min="0">₽
+                <input class="filter-price-input min-price" type="number" name="min-price" value="100" min="0">₽
               </label>
               <label>
-                - <input class="filter-price-input max-price" type="number" value="500" min="0">₽
+                - <input class="filter-price-input max-price" type="number" name="max-price" value="500" min="0">₽
               </label>
               <div class="price-range-wrapper">
                 <div class="range-scale">
@@ -266,7 +263,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -284,7 +281,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -302,7 +299,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -320,7 +317,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -338,7 +335,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -356,7 +353,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -374,7 +371,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -392,7 +389,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -410,7 +407,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -428,7 +425,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -446,7 +443,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -464,7 +461,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
           </ul>

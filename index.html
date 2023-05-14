@@ -14,11 +14,10 @@
         </a>
         <nav class="site-navigation">
           <ul class="products-list">
-            <li class="products-item">
-              <a class="products-item-link" href="#">Каталог</a>
+            <li class="products-item catalog-menu">
+              <a class="products-item-link catalog-menu-button" href="#">Каталог</a>
               <div class="catalog-popover-wrapper">
-                <h2 class="visually-hidden">Меню каталога.</h2>
-                <a class="catalog-menu-link new-products" href="#">Новинки</a>
+                <h2 class="new-products">Новинки</h2>
                 <ul class="catalog-menu">
                   <li class="catalog-menu-item">
                     <a class="catalog-menu-link" href="catalog.html">Сливочное</a>
@@ -47,18 +46,17 @@
             <li class="navigation-item">
               <a class="search-button" href="#">
                 <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"
-                  viewBox="0 0 16 17" role="img">
+                  viewBox="0 0 16 17" role="img" aria-label="Поиск по сайту.">
                   <path fill="#2D3440" fill-rule="evenodd"
                     d="M2.66 8.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z"
                     clip-rule="evenodd" />
                 </svg>
+                <span class="visually-hidden">Кнопка поиска по сайту.</span>
               </a>
-              <span class="visually-hidden">Кнопка поиска по сайту.</span>
               <div class="search-field-wrapper">
-                <form class="search-field" action="https://echo.htmlacademy.ru/" method="get">
-                  <input class="field" type="search" id="search-field" name="field" placeholder="Поиск по сайту"
-                    aria-label="Поле поиска по сайту." required>
-                  <label class="search-field-label" for="search-field"></label>
+                <form class="search-field-form" action="https://echo.htmlacademy.ru/" method="get">
+                  <input class="field" type="search" id="search-field" name="field" placeholder="Поиск по сайту" required>
+                  <label class="visually-hidden" for="search-field">Поле поиска по сайту.</label>
                   <button class="search-reset-button" type="reset">
                     <span class="visually-hidden">Сбросить.</span>
                   </button>
@@ -75,7 +73,6 @@
                 </svg>
                 Вход
               </a>
-              <span class="visually-hidden">Кнопка входа в личный кабинет.</span>
               <div class="login-window-popover">
                 <h2>Личный кабинет</h2>
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -101,13 +98,13 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="cart-items cart-not-empty">2 товара</span>
+                <span class="cart-items">2 товара</span>
                 <span class="cart-items cart-empty">Нет товаров</span>
               </a>
               <span class="visually-hidden">Кнопка корзины.</span>
               <div class="cart-popover">
                 <h2>Корзина</h2>
-                <div class="cart-popover-wrapper cart-not-empty">
+                <div class="cart-popover-wrapper">
                   <form class="order-checkout" action="https://echo.htmlacademy.ru/" method="post">
                     <ul class="cart-items-list">
                       <li class="cart-item">
@@ -161,23 +158,23 @@
               <p class="slider-item-info">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом –
                 это идеальный десерт для всей семьи.</p>
               <a class="order-item-button" href="#">Заказать</a>
-              <img class="slider-image" src="images/photos/ice-cream-slider-1.jpg" width="328" height="507"
+              <img class="slider-image" src="images/photos/ice-cream-slider-1.png" width="328" height="507"
                 alt="Нежный пломбир с клубничным джемом.">
             </li>
-            <li class="slider-item slider-inactive">
+            <li class="slider-item">
               <h3 class="slider-item-title">Сливочное мороженое со вкусом банана</h3>
               <p class="slider-item-info">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
                 даже в самый жаркий летний день.</p>
               <a class="order-item-button" href="#">Заказать</a>
-              <img class="slider-image" src="images/photos/ice-cream-slider-2.jpg" width="328" height="507"
+              <img class="slider-image" src="images/photos/ice-cream-slider-2.png" width="328" height="507"
                 alt="Сливочное мороженое со вкусом банана.">
             </li>
-            <li class="slider-item slider-inactive">
+            <li class="slider-item">
               <h3 class="slider-item-title">Карамельный пломбир с маршмеллоу</h3>
               <p class="slider-item-info">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
                 сердца сладкоежек всех возрастов.</p>
               <button class="order-item-button" type="button">Заказать</button>
-              <img class="slider-image" src="images/photos/ice-cream-slider-3.jpg" width="328" height="507"
+              <img class="slider-image" src="images/photos/ice-cream-slider-3.png" width="328" height="507"
                 alt="Карамельный пломбир с маршмеллоу.">
             </li>
           </ol>
@@ -238,17 +235,17 @@
           </ul>
         </section>
         <section class="bonus-items">
-          <h2 class="visually-hidden">Подарки к заказам</h2>
+          <h2 class="visually-hidden">Подарки к заказам.</h2>
           <p class="bonus-items-title">Заказывайте мороженое и получайте подарки!</p>
           <ul class="bonus-items-list">
             <li class="bonus-item">
-              <p class="item-title">Малинка даром!</p>
+              <h3 class="item-title">Малинка даром!</р>
               <p class="item-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового
                 варенья бесплатно.</p>
               <a class="bonus-item-button" href="#">Хочу подарок</a>
             </li>
             <li class="bonus-item">
-              <p class="item-title">Маршмеллоу даром!</p>
+              <h3 class="item-title">Маршмеллоу даром!</h3>
               <p class="item-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно
                 бесплатно.</p>
               <a class="bonus-item-button" href="#">Хочу подарок</a>
@@ -274,7 +271,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -292,7 +289,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -310,7 +307,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
             <li class="catalog-list-item">
@@ -328,7 +325,7 @@
                     d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="visually-hidden">Корзина.</span>
+                <span class="visually-hidden">Добавить в корзину.</span>
               </button>
             </li>
           </ul>
@@ -340,30 +337,22 @@
               производства на развес</p>
             <ul class="about-us-list">
               <li class="about-us-item">
-                <p class="about-us-text">
                   Всё наше мороженое изготавливается на собственном производстве с использованием современного
                   оборудования
                   и проверенных временем технологий.
-                </p>
               </li>
               <li class="about-us-item">
-                <p class="about-us-text">
                   Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и
                   добавки
                   произведены из натурального сырья.
-                </p>
               </li>
               <li class="about-us-item">
-                <p class="about-us-text">
                   Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает
                   долговременное сотрудничество.
-                </p>
               </li>
               <li class="about-us-item">
-                <p class="about-us-text">
                   Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и
                   позволяет сохранить превосходный вкус.
-                </p>
               </li>
             </ul>
           </div>
@@ -383,7 +372,7 @@
           </p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="subscription-email" class="subscription-email-label visually-hidden">Ваш email.</label>
-            <input type="email" class="subscription-email-field" id="subscription-email" placeholder="email@example.com"
+            <input type="email" class="subscription-email-field" id="subscription-email" name="subscription-email" placeholder="email@example.com"
               required>
             <button class="submit-button">Отправить</button>
           </form>
@@ -399,7 +388,7 @@
           </div>
           <div class="delivery-form-wrapper">
             <h3 class="visually-hidden">Форма доставки.</h3>
-            <p class="delivery-form-info"></p>
+            <p class="delivery-form-info">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="delivery-date" class="delivery-info-label">Дата</label>
               <span class="tooltip">
@@ -410,9 +399,9 @@
                   Укажите желаемую дату доставки
                 </span>
               </span>
-              <input type="date" class="delivery-info-field" id="delivery-date" required>
+              <input type="date" class="delivery-info-field" name="delivery-date" id="delivery-date" required>
               <label for="delivery-phone" class="delivery-info-label">Телефон</label>
-              <input type="tel" class="delivery-info-field" id="delivery-phone"
+              <input type="tel" class="delivery-info-field" name="delivery-phone" id="delivery-phone"
                 pattern="+7 [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 800 999-00-00" required>
               <label for="delivery-address" class="delivery-info-label">Адрес</label>
               <span class="tooltip">
@@ -423,9 +412,9 @@
                   Введите название улицы, дома и квартиры
                 </span>
               </span>
-              <input type="text" class="delivery-info-field" id="delivery-address"
+              <input type="text" class="delivery-info-field" name="delivery-address" id="delivery-address"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
-              <button class="submit-button" type="button">Отправить</button>
+              <button class="submit-button">Отправить</button>
             </form>
           </div>
         </section>
@@ -436,7 +425,7 @@
             <address class="contacts-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</address>
             <p class="contacts-tel-title">Для заказов по телефону:</p>
             <a class="contacts-order-phone" href="tel:+7812812-12-12">+7 (812) 812-12-12</a>
-            <span class="contacts-working-time">(с 10 до 20 ежедневно)</span>
+            <p class="contacts-working-time">(с 10 до 20 ежедневно)</p>
             <a class="feedback-form-button" href="#">Форма обратной связи</a>
           </div>
         </section>
@@ -507,23 +496,23 @@
             © 2021</p>
         </div>
       </footer>
-      <div class="modal-container">
-        <div class="modal-window">
-          <h2 class="visually-hidden">Форма обратной связи.</h2>
-          <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="name-field" class="form-field-label visually-hidden">Введите имя и фамилию.</label>
-            <input type="text" class="form-field-input" id="name-field" placeholder="Имя и фамилия" required>
-            <label for="email-field" class="form-field-label visually-hidden">Введите email.</label>
-            <input type="email" class="form-field-input" id="email-field" placeholder="email@example.com" required>
-            <label for="feedback-textarea" class="form-field-label visually-hidden">Введите сообщение.</label>
-            <textarea class="form-textarea" id="feedback-textarea" name="message" placeholder="В свободной форме"
-              required></textarea>
-            <button class="submit-button" type="submit">Отправить</button>
-          </form>
-          <button class="modal-close" type="button">
-            <span class="visually-hidden">Кнопка закрытия окна.</span>
-          </button>
-        </div>
+    </div>
+    <div class="modal-container">
+      <div class="modal-window">
+        <h2 class="visually-hidden">Форма обратной связи.</h2>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="name-field" class="form-field-label visually-hidden">Введите имя и фамилию.</label>
+          <input type="text" class="form-field-input" name="name-field" id="name-field" placeholder="Имя и фамилия" required>
+          <label for="email-field" class="form-field-label visually-hidden">Введите email.</label>
+          <input type="email" class="form-field-input" name="email-field" id="email-field" placeholder="email@example.com" required>
+          <label for="feedback-textarea" class="form-field-label visually-hidden">Введите сообщение.</label>
+          <textarea class="form-textarea" id="feedback-textarea" name="message" placeholder="В свободной форме"
+            required></textarea>
+          <button class="submit-button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Кнопка закрытия окна.</span>
+        </button>
       </div>
     </div>
   </body>
