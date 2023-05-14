@@ -17,21 +17,23 @@
             <li class="products-item catalog-menu">
               <a class="products-item-link catalog-menu-button" href="#">Каталог</a>
               <div class="catalog-popover-wrapper">
-                <h2 class="new-products">Новинки</h2>
-                <ul class="catalog-menu">
-                  <li class="catalog-menu-item">
-                    <a class="catalog-menu-link" href="catalog.html">Сливочное</a>
-                  </li>
-                  <li class="catalog-menu-item">
-                    <a class="catalog-menu-link" href="#">Щербеты</a>
-                  </li>
-                  <li class="catalog-menu-item">
-                    <a class="catalog-menu-link" href="#">Фруктовый лед</a>
-                  </li>
-                  <li class="catalog-menu-item">
-                    <a class="catalog-menu-link" href="#">Мелорин</a>
-                  </li>
-                </ul>
+                <div class="catalog-popover">
+                  <h2 class="new-products">Новинки</h2>
+                  <ul class="catalog-menu">
+                    <li class="catalog-menu-item">
+                      <a class="catalog-menu-link" href="catalog.html">Сливочное</a>
+                    </li>
+                    <li class="catalog-menu-item">
+                      <a class="catalog-menu-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="catalog-menu-item">
+                      <a class="catalog-menu-link" href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="catalog-menu-item">
+                      <a class="catalog-menu-link" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="products-item">
@@ -54,13 +56,16 @@
                 <span class="visually-hidden">Кнопка поиска по сайту.</span>
               </a>
               <div class="search-field-wrapper">
-                <form class="search-field-form" action="https://echo.htmlacademy.ru/" method="get">
-                  <input class="field" type="search" id="search-field" name="field" placeholder="Поиск по сайту" required>
-                  <label class="visually-hidden" for="search-field">Поле поиска по сайту.</label>
-                  <button class="search-reset-button" type="reset">
-                    <span class="visually-hidden">Сбросить.</span>
-                  </button>
-                </form>
+                <div class="search-popover">
+                  <form class="search-field-form" action="https://echo.htmlacademy.ru/" method="get">
+                    <input class="search-input" type="search" id="search-field" name="field"
+                      placeholder="Поиск по сайту" required>
+                    <label class="visually-hidden" for="search-field">Поле поиска по сайту.</label>
+                    <button class="search-reset-button" type="reset">
+                      <span class="visually-hidden">Сбросить.</span>
+                    </button>
+                  </form>
+                </div>
               </div>
             </li>
             <li class="navigation-item">
@@ -71,7 +76,7 @@
                     d="M8 1.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H8.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V2.86a.67.67 0 0 0-.67-.67H8.67A.67.67 0 0 1 8 1.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.67.67 0 0 1 .2.47.66.66 0 0 1-.2.48L5.8 11.33a.67.67 0 1 1-.94-.94l2.2-2.2H.66a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
                     clip-rule="evenodd" />
                 </svg>
-                Вход
+                <span class="login-button">Вход</span>
               </a>
               <div class="login-window-popover">
                 <h2>Личный кабинет</h2>
