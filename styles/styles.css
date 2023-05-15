@@ -239,9 +239,27 @@ html {
   border-radius: 27px;
 }
 
-.search-button:hover + .search-field-wrapper,
-.search-button:focus-within + .search-field-wrapper,
-.search-button:active + .search-field-wrapper  {
+.search-button:hover,
+.navigation-item-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.search-button:focus,
+.navigation-item-link:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
+
+.search-button:active,
+.navigation-item-link:active {
+  background-color: #FCFCFC;
+  outline: none;
+}
+
+.search-form:hover .search-field-wrapper,
+.search-form:focus-within .search-field-wrapper,
+.search-form:active .search-field-wrapper  {
   display: block;
 }
 
@@ -250,11 +268,11 @@ html {
   top: 100%;
   right: 0;
   padding-top: 8px;
+  display: none;
 }
 
 .search-popover {
   padding: 24px 16px;
-  /*display: none;*/
   width: 356px;
   background-color: #FCFCFC;
   border-radius: 4px;
@@ -277,6 +295,35 @@ html {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+}
+
+.search-input::placeholder {
+  color: #B9B9B9;
+}
+
+.search-input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-input:hover {
+  outline: 1px solid #2D3440;
+  outline-offset: -1px;
+}
+
+.search-input:focus {
+  outline: 2px solid #2D3440;
+  outline-offset: -2px;
+}
+
+.search-input:disabled {
+  background-color: #E7E7E7;
+  outline: 1px solid #B9B9B9;
+  outline-offset: -1px;
+  color: rgba(45, 52, 64, 0.65)
+}
+
+.search-input:disabled:hover::placeholder {
+  color: #2D3440;
 }
 
 .search-reset-button {
@@ -312,6 +359,32 @@ html {
   border-radius: 30px;
   color: #2D3440;
   text-decoration: none;
+}
+
+.login-icon:active {
+  fill: #FCFCFC;
+}
+
+.login-button:active {
+  background-color: #FF4A78;
+  color: #FCFCFC;
+}
+
+.login-button:active:hover,
+.login-button:active:hover .login-icon {
+  opacity: 0.6;
+}
+
+.login-button:active:focus,
+.login-button:active:focus .login-icon {
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
+
+.login-button:active:active,
+.login-button:active:active .login-icon {
+  opacity: 0.3;
+  outline: none;
 }
 
 .login-window-popover {
