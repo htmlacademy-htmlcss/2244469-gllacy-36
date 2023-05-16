@@ -6,6 +6,7 @@
     <title>Интернет-магазин Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body class="page-body">
     <div class="page-container">
       <header class="page-header">
@@ -68,7 +69,7 @@
                 </div>
               </div>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item login-window">
               <a class="navigation-item-link login-button" href="#">
                 <svg class="login-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none"
                   viewBox="0 0 14 15" role="img">
@@ -78,24 +79,28 @@
                 </svg>
                 <span class="login-button">Вход</span>
               </a>
-              <div class="login-window-popover">
-                <h2>Личный кабинет</h2>
-                <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <label for="login-email" class="visually-hidden">Ваш e-mail.</label>
-                  <input type="email" class="login-field email-field" id="login-email" placeholder="email@example.com"
-                    required>
-                  <label for="login-password" class="visually-hidden">Ваш пароль.</label>
-                  <input type="password" class="login-field password-field" id="login-password" placeholder="123456"
-                    required>
-                  <button class="login-button" type="submit">Войти</button>
-                  <div class="login-options-wrapper">
-                    <a class="login-options-link" href="#">Забыли пароль?</a>
-                    <a class="login-options-link" href="#">Регистрация</a>
-                  </div>
-                </form>
+              <div class="login-window-wrapper">
+                <div class="login-window-popover">
+                  <h2 class="login-popover-heading">Личный кабинет</h2>
+                  <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label for="login-email" class="visually-hidden">Ваш e-mail.</label>
+                    <input type="email" class="login-field email-field" id="login-email" placeholder="email@example.com"
+                      required>
+                    <label for="login-password" class="visually-hidden">Ваш пароль.</label>
+                    <input type="password" class="login-field password-field" id="login-password" placeholder="123456"
+                      required>
+                    <div class="login-button-options-wrapper">
+                      <button class="login-window-button" type="submit">Войти</button>
+                      <div class="login-options-wrapper">
+                        <a class="login-options-link" href="#">Забыли пароль?</a>
+                        <a class="login-options-link" href="#">Регистрация</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item cart-window">
               <a class="navigation-item-link cart-button" href="#">
                 <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"
                   viewBox="0 0 16 17" role="img">
@@ -105,11 +110,11 @@
                 </svg>
                 <span class="cart-items">2 товара</span>
                 <span class="cart-items cart-empty">Нет товаров</span>
+                <span class="visually-hidden">Кнопка корзины.</span>
               </a>
-              <span class="visually-hidden">Кнопка корзины.</span>
-              <div class="cart-popover">
-                <h2>Корзина</h2>
-                <div class="cart-popover-wrapper">
+              <div class="cart-popover-wrapper">
+                <div class="cart-popover">
+                  <h2 class="cart-heading">Корзина</h2>
                   <form class="order-checkout" action="https://echo.htmlacademy.ru/" method="post">
                     <ul class="cart-items-list">
                       <li class="cart-item">
@@ -139,7 +144,7 @@
                     <p class="total-price">Итого: 790 ₽</p>
                   </form>
                 </div>
-                <div class="cart-popover-wrapper cart-empty">
+                <div class="cart-popover cart-empty-window">
                   <p class="cart-empty-text">Ваша корзина пока пуста</p>
                 </div>
               </div>
@@ -225,7 +230,8 @@
               <legend class="catalog-filter-group-title">Наполнители:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <input type="checkbox" class="filter-checkbox visually-hidden" id="chocolate" name="chocolate" checked>
+                  <input type="checkbox" class="filter-checkbox visually-hidden" id="chocolate" name="chocolate"
+                    checked>
                   <label for="chocolate" class="checkbox-button">шоколадные</label>
                 </li>
                 <li class="catalog-filter-item">
@@ -576,4 +582,5 @@
       </footer>
     </div>
   </body>
+
 </html>

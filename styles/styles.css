@@ -137,23 +137,36 @@ html {
   background: url("../images/catalog-arrow-down.svg") no-repeat calc(100% - 18px) calc(100% - 14px);
 }
 
-.catalog-menu:hover .catalog-menu-button,
+.catalog-menu-button:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.catalog-menu-button:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 2px solid #2D3440;
+  outline-offset: -2px;
+}
+
+.catalog-menu-button:active {
+  background-color: #FCFCFC;
+}
+
 .catalog-menu:focus-within .catalog-menu-button {
   background: #FF4A78 url("../images/arrow-up.svg") no-repeat calc(100% - 18px) calc(100% - 14px);
   color: #FCFCFC;
 }
 
-.catalog-menu-button:hover {
-  opacity: 0.6;
-}
-
-.catalog-menu-button:focus {
+.catalog-menu:focus-within .catalog-menu-button:focus {
   opacity: 1;
   outline: 2px solid #000000;
   outline-offset: -2px;
 }
 
-.catalog-menu-button:active {
+.catalog-menu:focus-within .catalog-menu-button:hover {
+  opacity: 0.6;
+}
+
+.catalog-menu:focus-within .catalog-menu-button:active {
   opacity: 0.3;
 }
 
@@ -209,6 +222,23 @@ html {
   color: #2D3440;
 }
 
+.catalog-menu-button:hover,
+.catalog-menu-link:hover {
+  background-color: #FFCBD8;
+}
+
+.catalog-menu-button:focus,
+.catalog-menu-link:focus {
+  background-color: #FFCBD8;
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
+
+.catalog-menu-button:active,
+.catalog-menu-link:active {
+  background-color: #FF7799;
+}
+
 .contacts-phone {
   display: block;
   margin: 0 16px 0 0;
@@ -255,6 +285,35 @@ html {
 .navigation-item-link:active {
   background-color: #FCFCFC;
   outline: none;
+  color: #2D3440;
+}
+
+.search-icon:active {
+  fill: #2D3440;
+}
+
+.search-icon:current,
+.search-icon:current:hover,
+.search-icon:current:focus,
+.search-icon:current:active {
+  fill: #FCFCFC;
+}
+
+.search-button:current {
+  background-color: #FF4A78;
+}
+
+.search-button:current:hover {
+  opacity: 0.6;
+}
+
+.search-button:current:focus {
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
+
+.search-button:current:active {
+  opacity: 0.3;
 }
 
 .search-form:hover .search-field-wrapper,
@@ -361,42 +420,206 @@ html {
   text-decoration: none;
 }
 
-.login-icon:active {
+.login-icon:current {
   fill: #FCFCFC;
 }
 
-.login-button:active {
+.login-button:current {
   background-color: #FF4A78;
   color: #FCFCFC;
 }
 
-.login-button:active:hover,
-.login-button:active:hover .login-icon {
+.login-button:current:hover,
+.login-button:current:hover .login-icon {
   opacity: 0.6;
 }
 
-.login-button:active:focus,
-.login-button:active:focus .login-icon {
+.login-button:current:focus,
+.login-button:current:focus .login-icon {
   outline: 2px solid #000000;
   outline-offset: -2px;
 }
 
-.login-button:active:active,
-.login-button:active:active .login-icon {
+.login-button:current:active,
+.login-button:current:active .login-icon {
   opacity: 0.3;
   outline: none;
 }
 
-.login-window-popover {
+.login-window-wrapper {
   position: absolute;
+  top: 100%;
+  right: 0;
+  padding-top: 8px;
   display: none;
 }
 
-.cart-popover {
+.login-window-popover {
+  width: 420px;
+  padding: 48px;
+  background-color: #FCFCFC;
+  border-radius: 4px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+}
+
+.login-window:hover .login-window-wrapper,
+.login-window:focus-within .login-window-wrapper,
+.login-window:active .login-window-wrapper {
+  display: block;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+}
+
+.login-popover-heading {
+  margin: 0 0 32px 0;
+  color: #2D3440;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.login-field {
+  padding: 14px 16px;
+  background-color: #FFFFFF;
+  color: #2D3440;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  appearance: none;
+}
+
+.login-field::placeholder {
+  color: #B9B9B9;
+}
+
+.login-field:hover {
+  outline: 1px solid #2D3440;
+  outline-offset: -1px;
+}
+
+.login-field:focus {
+  outline: 2px solid #2D3440;
+  outline-offset: -2px;
+}
+
+.login-field:disabled {
+  background-color: #E7E7E7;
+  outline: 1px solid #B9B9B9;
+  outline-offset: -1px;
+  color: rgba(45, 52, 64, 0.65)
+}
+
+.login-field:disabled:hover::placeholder {
+  color: #2D3440;
+}
+
+.login-button-options-wrapper {
+  display: flex;
+  gap: 0 19px;
+  margin: 16px 0 0 0;
+}
+
+.login-window-button {
+  padding: 12px 32px;
+  width: 122px;
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  outline: 4px solid #F7BACA;
+  outline-offset: -4px;
+  border-radius: 26px;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  appearance: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-window-button:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  color: #2D3440;
+  outline: 4px solid #FF2F64;
+  outline-offset: -4px;
+}
+
+.login-window-button:focus {
+  background-color: #FF2F64;
+  color: #FCFCFC;
+  outline: 2px solid #2D3440;
+  outline-offset: -2px;
+}
+
+.login-window-button:active {
+  background-color: #FEAFC3;
+  color: #FCFCFC;
+  outline: 2px solid #2D3440;
+  outline-offset: -2px;
+}
+
+.login-window-button:disabled {
+  font-weight: 400;
+  background-color: #B9B9B9;
+  color: #565C66;
+  outline: 4px solid rgba(185, 185, 185, 0.3);
+  outline-offset: -4px;
+}
+
+.login-options-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px 0;
+  align-items: flex-start;
+}
+
+.login-options-link {
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid #2D3440;
+}
+
+.cart-button {
+  position: relative;
+}
+
+.cart-popover-wrapper {
   position: absolute;
-  display: none;
+  top: 100%;
+  left: 0;
+  padding-top: 8px;
+}
+
+.cart-popover {
+  /*display: none;*/
 }
 
 .cart-empty {
   display: none;
+}
+
+.cart-popover,
+.cart-empty-window {
+  width: 441px;
+  padding: 48px 0;
+  background-color: #FCFCFC;
+  border-radius: 4px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  /*display: none;*/
+}
+
+.cart-empty-window {
+  width: 288px;
+}
+
+.cart-heading {
+  margin: 0 0 32px 0;
+  color: #2D3440;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
 }
