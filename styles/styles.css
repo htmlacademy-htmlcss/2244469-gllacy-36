@@ -86,6 +86,18 @@ html {
   margin: 0 16px 0 0;
 }
 
+.navigation-page-logo:hover {
+  opacity: 0.6;
+}
+
+.navigation-page-logo:focus {
+  outline: 2px solid #2D3440;
+}
+
+.navigation-page-logo:active {
+  opacity: 0.3;
+}
+
 .site-navigation {
   display: flex;
   align-items: center;
@@ -247,6 +259,18 @@ html {
   font-weight: 700;
   color: #2D3440;
   text-decoration: none;
+}
+
+.contacts-phone:hover {
+  opacity: 0.6;
+}
+
+.contacts-phone:focus {
+  outline: 2px solid #2D3440;
+}
+
+.contacts-phone:active {
+  opacity: 0.3;
 }
 
 .user-navigation-list {
@@ -522,13 +546,13 @@ html {
   margin: 16px 0 0 0;
 }
 
-.login-window-button {
+.button-additional {
   padding: 12px 32px;
-  width: 122px;
+  min-width: 113px;
   color: #FCFCFC;
   background-color: #FF2F64;
   outline: 4px solid #F7BACA;
-  outline-offset: -4px;
+  outline-offset: -2px;
   border-radius: 26px;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   appearance: none;
@@ -539,33 +563,33 @@ html {
   cursor: pointer;
 }
 
-.login-window-button:hover {
+.button-additional:hover {
   background-color: rgba(252, 252, 252, 0.3);
   color: #2D3440;
   outline: 4px solid #FF2F64;
-  outline-offset: -4px;
+  outline-offset: -2px;
 }
 
-.login-window-button:focus {
+.button-additional:focus {
   background-color: #FF2F64;
   color: #FCFCFC;
   outline: 2px solid #2D3440;
   outline-offset: -2px;
 }
 
-.login-window-button:active {
+.button-additional:active {
   background-color: #FEAFC3;
   color: #FCFCFC;
   outline: 2px solid #2D3440;
   outline-offset: -2px;
 }
 
-.login-window-button:disabled {
+.button-additional:disabled {
   font-weight: 400;
   background-color: #B9B9B9;
   color: #565C66;
   outline: 4px solid rgba(185, 185, 185, 0.3);
-  outline-offset: -4px;
+  outline-offset: -2px;
 }
 
 .login-options-wrapper {
@@ -583,6 +607,24 @@ html {
   border-bottom: 1px solid #2D3440;
 }
 
+.login-options-link:hover {
+  opacity: 0.6;
+}
+
+.login-options-link:focus {
+  outline: 2px solid #2D3440;
+}
+
+.login-options-link:active {
+  opacity: 0.3;
+}
+
+.cart-window:hover .cart-popover,
+.cart-window:focus-within .cart-popover,
+.cart-window:active .cart-popover {
+  display: block;
+}
+
 .cart-button {
   position: relative;
 }
@@ -590,12 +632,8 @@ html {
 .cart-popover-wrapper {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   padding-top: 8px;
-}
-
-.cart-popover {
-  /*display: none;*/
 }
 
 .cart-empty {
@@ -603,17 +641,20 @@ html {
 }
 
 .cart-popover,
-.cart-empty-window {
+.cart-empty-popover {
   width: 441px;
-  padding: 48px 0;
+  padding: 48px;
   background-color: #FCFCFC;
   border-radius: 4px;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
-  /*display: none;*/
+  display: none;
 }
 
-.cart-empty-window {
+.cart-empty-popover {
   width: 288px;
+  margin: 0 0 0 auto;
+  padding: 48px 20px;
+  text-align: center;
 }
 
 .cart-heading {
@@ -622,4 +663,114 @@ html {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+}
+
+.cart-empty-text {
+  margin: 0;
+  color: #2D3440;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.cart-items-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.cart-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 0 24px 0;
+  padding: 0 16px 0 0;
+}
+
+.cart-item:last-child::after {
+  content: "";
+  position: absolute;
+  bottom: -31px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border: 1px solid #E7E7E7;
+}
+
+.cart-items-link {
+  display: flex;
+  gap: 0 16px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.cart-items-link:hover {
+  opacity: 0.6;
+}
+
+.cart-items-link:focus {
+  outline: 2px solid #2D3440;
+}
+
+.cart-items-link:active {
+  opacity: 0.3;
+}
+
+.cart-items-image {
+  border-radius: 50%;
+}
+
+.cart-items-title {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cart-items-info {
+  margin: 0;
+  color: #B9B9B9;
+}
+
+.cart-items-price {
+  margin: 0 52px 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2D3440;
+}
+
+.button-price-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 64px 0 0 0;
+}
+
+.total-price {
+  margin: 0 0 0 auto;
+  color: #2D3440;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.delete-cart-item {
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background: #FCFCFC url("../images/close-button.svg") no-repeat center;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-cart-item:hover {
+  opacity: 0.6;
+}
+
+.delete-cart-item:focus {
+  outline: 2px solid #2D3440;
+}
+
+.delete-cart-item:active {
+  opacity: 0.3;
 }

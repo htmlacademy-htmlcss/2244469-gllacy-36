@@ -90,7 +90,7 @@
                     <input type="password" class="login-field password-field" id="login-password" placeholder="123456"
                       required>
                     <div class="login-button-options-wrapper">
-                      <button class="login-window-button" type="submit">Войти</button>
+                      <button class="login-window-button button-additional" type="submit">Войти</button>
                       <div class="login-options-wrapper">
                         <a class="login-options-link" href="#">Забыли пароль?</a>
                         <a class="login-options-link" href="#">Регистрация</a>
@@ -121,10 +121,12 @@
                         <a class="cart-items-link" href="#">
                           <img class="cart-items-image" src="images/photos/cart-raspberry.jpg" width="46" height="46"
                             alt="Малиновое мороженое.">
-                          <h3 class="cart-items-title">Малинка</h3>
-                          <p class="cart-items-info">1 кг х 310 ₽</p>
-                          <p class="cart-items-price">310 ₽</p>
+                          <div class="cart-items-info-wrapper">
+                            <h3 class="cart-items-title">Малинка</h3>
+                            <p class="cart-items-info">1 кг х 310 ₽</p>
+                          </div>
                         </a>
+                        <p class="cart-items-price">310 ₽</p>
                         <input type="hidden" name="order-item" value="Мороженое малиновое">
                         <button class="delete-cart-item" type="button" aria-label="Удалить товар из корзины."></button>
                       </li>
@@ -132,19 +134,23 @@
                         <a class="cart-items-link" href="#">
                           <img class="cart-items-image" src="images/photos/cart-bubble-gum.jpg" width="46" height="46"
                             alt="Мороженое бабл-гам.">
-                          <h3 class="cart-items-title">Бабл-гам</h3>
-                          <p class="cart-items-info">1,5 кг х 320 ₽</p>
-                          <p class="cart-items-price">480 ₽</p>
+                          <div class="cart-items-info-wrapper">
+                            <h3 class="cart-items-title">Бабл-гам</h3>
+                            <p class="cart-items-info">1,5 кг х 320 ₽</p>
+                          </div>
                         </a>
+                        <p class="cart-items-price">480 ₽</p>
                         <input type="hidden" name="order-item" value="Мороженое бабл-гам">
                         <button class="delete-cart-item" type="button" aria-label="Удалить товар из корзины."></button>
                       </li>
                     </ul>
-                    <button class="submit-order">Оформить заказ</button>
-                    <p class="total-price">Итого: 790 ₽</p>
+                    <div class="button-price-wrapper">
+                      <button class="submit-order button-additional">Оформить заказ</button>
+                      <p class="total-price">Итого: 790 ₽</p>
+                    </div>
                   </form>
                 </div>
-                <div class="cart-popover cart-empty-window">
+                <div class="cart-empty-popover">
                   <p class="cart-empty-text">Ваша корзина пока пуста</p>
                 </div>
               </div>
