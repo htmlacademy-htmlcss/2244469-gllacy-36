@@ -898,9 +898,51 @@ html {
 
 /*MAIN*/
 
+.welcome-slider {
+  position: relative;
+}
+
+.slider-navigation-button {
+  /*position: absolute;*/
+  width: 38px;
+  height: 38px;
+  background: rgba(252, 252, 252, 0.3) url("../images/slider-button-arrow-previous.svg") no-repeat 13px 11px;
+  border: 2px solid #FCFCFC;
+  border-radius: 26px;
+  appearance: none;
+}
+
+.button-next {
+  transform: rotate(180deg);
+}
+
 .slider-items-list {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.slider-item-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+  color: #2D3440;
+  margin: 0;
+}
+
+.slider-item-info {
+  font-size: 18px;
+  line-height: 24px;
+  color: #2D3440;
+  margin: 0;
+}
+
+.button-main {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: #FCFCFC;
+  color: #2D3440;
+  border-radius: 26px;
+  text-decoration: none;
 }
