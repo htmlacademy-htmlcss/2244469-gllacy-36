@@ -230,6 +230,7 @@ html {
   top: 100%;
   left: 0;
   padding-top: 8px;
+  z-index: 10;
 }
 
 .catalog-popover {
@@ -439,6 +440,7 @@ html {
   right: 0;
   padding-top: 8px;
   display: none;
+  z-index: 10;
 }
 
 .search-popover {
@@ -563,6 +565,7 @@ html {
   right: 0;
   padding-top: 8px;
   display: none;
+  z-index: 10;
 }
 
 .login-window-popover {
@@ -739,6 +742,7 @@ html {
   top: 100%;
   right: 0;
   padding-top: 8px;
+  z-index: 10;
 }
 
 .cart-empty {
