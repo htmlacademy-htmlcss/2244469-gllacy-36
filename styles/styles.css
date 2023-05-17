@@ -170,13 +170,21 @@ html {
   background: url("../images/catalog-arrow-down.svg") no-repeat calc(100% - 18px) calc(100% - 14px);
 }
 
+.catalog-menu:hover .catalog-menu-button,
+.catalog-menu:focus-within .catalog-menu-button,
+.catalog-menu:active .catalog-menu-button {
+  background: #FF4A78 url("../images/arrow-up.svg") no-repeat calc(100% - 18px) calc(100% - 14px);
+  color: #FCFCFC;
+}
+
 .catalog-menu-button:hover {
-  background-color: rgba(252, 252, 252, 0.5);
+  background: #FF4A78 url("../images/arrow-up.svg") no-repeat calc(100% - 18px) calc(100% - 14px);
+  color: #FCFCFC;
+  opacity: 0.6;
 }
 
 .catalog-menu-button:focus {
-  background-color: rgba(252, 252, 252, 0.5);
-  outline: 2px solid #2D3440;
+  outline: 2px solid #000000;
   outline-offset: -2px;
 }
 
@@ -185,44 +193,12 @@ html {
 }
 
 .catalog-menu-button:focus-visible {
-  background-color: rgba(252, 252, 252, 0.5);
-  outline: 2px solid #2D3440;
+  outline: 2px solid #000000;
   outline-offset: -2px;
 }
 
 .catalog-menu-button:active {
-  background-color: #FCFCFC;
-  outline: transparent;
-}
-
-.catalog-menu:focus-within .catalog-menu-button {
-  background: #FF4A78 url("../images/arrow-up.svg") no-repeat calc(100% - 18px) calc(100% - 14px);
-  color: #FCFCFC;
-}
-
-.catalog-menu:focus-within .catalog-menu-button:focus {
-  opacity: 1;
-  outline: 2px solid #000000;
-  outline-offset: -2px;
-}
-
-.catalog-menu:focus-within .catalog-menu-button:focus:not(:focus-visible) {
-  outline: transparent;
-}
-
-.catalog-menu:focus-within .catalog-menu-button:focus-visible {
-  opacity: 1;
-  outline: 2px solid #000000;
-  outline-offset: -2px;
-}
-
-.catalog-menu:focus-within .catalog-menu-button:hover {
-  opacity: 0.6;
-}
-
-.catalog-menu:focus-within .catalog-menu-button:active {
   opacity: 0.3;
-  outline: transparent;
 }
 
 .catalog-popover-wrapper {
@@ -278,31 +254,26 @@ html {
   color: #2D3440;
 }
 
-.catalog-menu-button:hover,
 .catalog-menu-link:hover {
   background-color: #FFCBD8;
 }
 
-.catalog-menu-button:focus,
 .catalog-menu-link:focus {
   background-color: #FFCBD8;
   outline: 2px solid #000000;
   outline-offset: -2px;
 }
 
-.catalog-menu-button:focus:not(:focus-visible),
 .catalog-menu-link:focus:not(:focus-visible) {
   outline: transparent;
 }
 
-.catalog-menu-button:focus-visible,
 .catalog-menu-link:focus-visible {
   background-color: #FFCBD8;
   outline: 2px solid #000000;
   outline-offset: -2px;
 }
 
-.catalog-menu-button:active,
 .catalog-menu-link:active {
   background-color: #FF7799;
   outline: transparent;
@@ -947,6 +918,35 @@ html {
   padding: 12px 32px;
   background-color: #FCFCFC;
   color: #2D3440;
+  border: 2px solid #2D3440;
   border-radius: 26px;
+  outline: 4px solid #F9CBD7;
+  outline-offset: -2px;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  line-height: 20px;
+  font-weight: 700;
   text-decoration: none;
+}
+
+.button-main:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  outline: 4px solid #FCFCFC;
+  outline-offset: -2px;
+}
+
+.button-main:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: transparent;
+}
+
+.button-main:active {
+  background-color: #FCFCFC;
+  outline: transparent;
+}
+
+.button-main:disabled {
+  background-color: #E7E7E7;
+  color: #B9B9B9;
+  outline: 4px solid #F2C7D2;
+  outline-offset: -2px;
 }
