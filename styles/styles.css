@@ -1109,15 +1109,26 @@ html {
   width: 28px;
   height: 28px;
   border-radius: 50%;
+  border: 2px solid rgba(252, 252, 252, 0.3);
 }
 
 .social-item-icon {
-  outline: 2px solid rgba(252, 252, 252, 0.3);
-  outline-offset: -2px;
-  border-radius: 50%;
+
 }
 
-.social-item-icon:hover {
+.telegram {
+  background: url("../images/icons/telegram-icon.svg") no-repeat center;
+}
+
+.vkontakte {
+  background: url("../images/icons/vk-icon.svg") no-repeat center;
+}
+
+.youtube {
+  background: url("../images/icons/youtube-icon.svg") no-repeat center;
+}
+
+.social-item-button:hover {
   background-color: #2D3440;
   outline: 2px solid #FDD5DF;
   outline-offset: -2px;
@@ -1130,7 +1141,6 @@ html {
 }
 
 .social-item-button:focus:not(:focus-visible) {
-  background-color: transparent;
   outline: 2px solid #FDD5DF;
   outline-offset: -2px;
 }
@@ -1142,5 +1152,6 @@ html {
 }
 
 .social-item-button:active {
+  background-color: #2D3440;
   opacity: 0.5;
 }
