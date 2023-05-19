@@ -358,7 +358,8 @@
         <section class="about-us">
           <h2 class="visually-hidden">О нас.</h2>
           <div class="about-us-wrapper">
-            <p class="about-us-title">Магазин Глейси – это онлайн и офлайн-магазин по&nbsp;продаже мороженого собственного
+            <p class="about-us-title">Магазин Глейси – это онлайн и офлайн-магазин по&nbsp;продаже мороженого
+              собственного
               производства на&nbsp;развес</p>
             <ul class="about-us-list">
               <li class="about-us-item production">
@@ -366,11 +367,13 @@
                 оборудования&nbsp;и проверенных временем технологий.
               </li>
               <li class="about-us-item farms">
-                Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств, с которыми нас&nbsp;связывает
+                Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств, с которыми
+                нас&nbsp;связывает
                 долговременное сотрудничество.
               </li>
               <li class="about-us-item eco">
-                Для приготовления мороженого используются сливки и&nbsp;молоко высочайшего качества. Все ингредиенты и&nbsp;добавки
+                Для приготовления мороженого используются сливки и&nbsp;молоко высочайшего качества. Все ингредиенты
+                и&nbsp;добавки
                 произведены из натурального сырья.
               </li>
               <li class="about-us-item temperature-control">
@@ -380,65 +383,78 @@
             </ul>
           </div>
         </section>
-        <section class="news-blog">
-          <h2 class="visually-hidden">Наш блог.</h2>
-          <p class="news-update">Новое в нашем блоге</p>
-          <a class="news-link" href="#">
-            <h3 class="news-title">10 способов сервировки фруктовых щербетов к столу</h3>
-          </a>
-        </section>
-        <section class="newsletter">
-          <h2 class="visually-hidden">Рассылка.</h2>
-          <p class="newsletter-subscription-text">
-            Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
-            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-          </p>
-          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="subscription-email" class="subscription-email-label visually-hidden">Ваш email.</label>
-            <input type="email" class="subscription-email-field" id="subscription-email" name="subscription-email"
-              placeholder="email@example.com" required>
-            <button class="submit-button">Отправить</button>
-          </form>
-        </section>
+        <div class="blog-newsletter-wrapper">
+          <section class="news-blog">
+            <h2 class="visually-hidden">Наш блог.</h2>
+            <p class="news-update">Новое в нашем блоге</p>
+            <a class="news-link" href="#">
+              <h3 class="news-title">10 способов сервировки фруктовых щербетов к&nbsp;столу</h3>
+            </a>
+          </section>
+          <section class="newsletter">
+            <h2 class="visually-hidden">Рассылка.</h2>
+            <div class="newsletter-wrapper">
+              <p class="newsletter-subscription-text">
+                Подпишитесь на нашу сладкую рассылку и будьте всегда в&nbsp;курсе всего самого вкусного, что у нас
+                происходит.
+                Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
+              <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label for="subscription-email" class="subscription-email-label visually-hidden">Ваш email.</label>
+                <input class="subscription-email-field" type="email" id="subscription-email" name="subscription-email"
+                  placeholder="email@example.com" required>
+                <button class="submit-button button-additional">Отправить</button>
+              </form>
+            </div>
+          </section>
+        </div>
         <section class="delivery-service">
           <h2 class="visually-hidden">Доставка.</h2>
           <div class="delivery-service-info-wrapper">
             <h3 class="delivery-service-title">Доставка любимого мороженого на дом</h3>
             <p class="delivery-service-info">
-              Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на
+              Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в магазин? Закажите доставку
+              мороженого на
               дом, и курьер привезёт вам ваш заказ в течение часа!
             </p>
           </div>
           <div class="delivery-form-wrapper">
             <h3 class="visually-hidden">Форма доставки.</h3>
-            <p class="delivery-form-info">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+            <p class="delivery-form-info">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить
+              заказ.
             </p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="delivery-date" class="delivery-info-label">Дата</label>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                  <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
-                </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
-                  Укажите желаемую дату доставки
+              <div class="input-wrapper">
+                <label for="delivery-date" class="delivery-info-label">Дата</label>
+                <span class="tooltip date-tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                    Укажите желаемую дату доставки
+                  </span>
                 </span>
-              </span>
-              <input type="date" class="delivery-info-field" name="delivery-date" id="delivery-date" required>
-              <label for="delivery-phone" class="delivery-info-label">Телефон</label>
-              <input type="tel" class="delivery-info-field" name="delivery-phone" id="delivery-phone"
-                pattern="+7 [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 800 999-00-00" required>
-              <label for="delivery-address" class="delivery-info-label">Адрес</label>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-address">
-                  <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
-                </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label-address">
-                  Введите название улицы, дома и квартиры
+                <input type="text" class="delivery-info-field date-field" name="delivery-date" id="delivery-date" placeholder="01.04.2020" required>
+              </div>
+              <div class="input-wrapper">
+                <label for="delivery-phone" class="delivery-info-label">Телефон</label>
+                <input type="tel" class="delivery-info-field phone-field" name="delivery-phone" id="delivery-phone"
+                  pattern="+7 [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 800 999-00-00" required>
+              </div>
+              <div class="input-wrapper">
+                <label for="delivery-address" class="delivery-info-label">Адрес</label>
+                <span class="tooltip address-tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-address">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-address">
+                    Введите название улицы, дома и квартиры
+                  </span>
                 </span>
-              </span>
-              <input type="text" class="delivery-info-field" name="delivery-address" id="delivery-address"
-                placeholder="ул. Большая Конюшенная, 19/8" required>
-              <button class="submit-button">Отправить</button>
+                <input type="text" class="delivery-info-field address-field" name="delivery-address" id="delivery-address"
+                  placeholder="ул. Большая Конюшенная, 19/8" required>
+              </div>
+              <button class="submit-button button-additional">Отправить</button>
             </form>
           </div>
         </section>

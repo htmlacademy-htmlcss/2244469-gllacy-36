@@ -440,32 +440,42 @@ html {
   font-weight: 400;
 }
 
-.search-input::placeholder {
+input::placeholder {
   color: #B9B9B9;
 }
 
-.search-input::-webkit-search-cancel-button {
+input::-webkit-search-cancel-button {
   display: none;
 }
 
-.search-input:hover {
+input:not(:placeholder-shown):invalid {
+  outline: 1px solid #EA5454;
+  outline-offset: -1px;
+}
+
+input:not(:placeholder-shown):invalid:hover {
+  outline: 2px solid #EA5454;
+  outline-offset: -2px;
+}
+
+input:hover {
   outline: 1px solid #2D3440;
   outline-offset: -1px;
 }
 
-.search-input:focus {
+input:focus {
   outline: 2px solid #2D3440;
   outline-offset: -2px;
 }
 
-.search-input:disabled {
+input:disabled {
   background-color: #E7E7E7;
   outline: 1px solid #B9B9B9;
   outline-offset: -1px;
   color: rgba(45, 52, 64, 0.65)
 }
 
-.search-input:disabled:hover::placeholder {
+input:disabled:hover::placeholder {
   color: #2D3440;
 }
 
@@ -610,6 +620,7 @@ html {
 .button-additional {
   padding: 12px 32px;
   min-width: 113px;
+  max-width: 156px;
   color: #FCFCFC;
   background-color: #FF2F64;
   border: 2px solid #2D3440;
@@ -1406,4 +1417,206 @@ html {
 
 .temperature-control::before {
   background: url("../images/icons/thermometer-icon.svg") no-repeat center;
+}
+
+.blog-newsletter-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 570px);
+  gap: 20px 30px;
+  margin: 0 0 80px 0;
+}
+
+.news-blog {
+  padding: 33px 230px 68px 32px;
+  background: rgba(255, 255, 255, 1) url("../images/photos/news-blog-background.jpg") no-repeat center top;
+  border-radius: 16px;
+}
+
+.news-update {
+  margin: 0 0 12px 0;
+  padding: 0;
+  line-height: 20px;
+}
+
+.news-link {
+  display: block;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.news-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.newsletter {
+  padding: 6px;
+  background: rgba(255, 255, 255, 1) url("../images/photos/subscription-background-cut.jpg");
+  border-radius: 16px;
+}
+
+.newsletter-wrapper {
+  padding: 26px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+.newsletter-subscription-text {
+  margin: 0 0 42px 0;
+}
+
+.subscription-email-field {
+  padding: 14px 60px 14px 16px;
+  margin: 0 14px 0 0;
+  width: 332px;
+  background-color: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  appearance: none;
+}
+
+.delivery-service {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 50px;
+  margin: 0 0 80px 0;
+  padding: 62px 64px 62px 100px;
+  background: #F6F6F7 url("../images/photos/delivery-background.jpg") no-repeat center top;
+  border-radius: 16px;
+}
+
+.delivery-service-info-wrapper {
+  margin: 103px 0 auto 0;
+  width: 372px;
+}
+
+.delivery-service-title {
+  margin: 0 0 24px 0;
+  color: #2D3440;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.delivery-service-info {
+  margin: 0;
+}
+
+.delivery-form-wrapper {
+  margin: 0 0 0 auto;
+  padding: 40px;
+  width: 500px;
+  background-color: #FCFCFC;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+.delivery-form-info {
+  margin: 0 0 32px 0;
+}
+
+.delivery-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 16px;
+  align-items: center;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0;
+}
+
+.delivery-info-label {
+  padding: 0 20px 0 0;
+  color: #2D3440;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.input-wrapper input {
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  color: #2D3440;
+  background-color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.date-field {
+  width: 117px;
+}
+
+.phone-field {
+  width: 287px;
+}
+
+.address-field {
+  width: 420px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+}
+
+.date-tooltip {
+  left: 58px;
+}
+
+.address-tooltip {
+  left: 70px;
+}
+
+.tooltip-toggle {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url("../images/info-button.svg") no-repeat center;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+}
+
+.tooltip-toggle:hover {
+  opacity: 0.6;
+}
+
+.tooltip-toggle:focus {
+  outline: 2px solid #2D3440;
+}
+
+.tooltip-toggle:focus:not(:focus-visible) {
+  outline: transparent;
+}
+
+.tooltip-toggle:focus-visible {
+  outline: 2px solid #2D3440;
+}
+
+.tooltip-toggle:active {
+  opacity: 0.3;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: ;
+  left: ;
+  padding: 10px 8px;
+  /*display: none;*/
+}
+
+.submit-button {
+  margin: 10px auto 0 auto;
 }
