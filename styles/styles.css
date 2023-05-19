@@ -1532,7 +1532,6 @@ input:disabled:hover::placeholder {
 }
 
 .delivery-info-label {
-  padding: 0 20px 0 0;
   color: #2D3440;
   line-height: 20px;
   font-weight: 700;
@@ -1578,7 +1577,7 @@ input:disabled:hover::placeholder {
 
 .tooltip-toggle {
   position: absolute;
-  top: 4px;
+  top: 3px;
   right: 0;
   display: block;
   width: 14px;
@@ -1611,12 +1610,49 @@ input:disabled:hover::placeholder {
 
 .tooltip-text {
   position: absolute;
-  top: ;
-  left: ;
+  top: -5px;
+  left: 14px;
   padding: 10px 8px;
-  /*display: none;*/
+  display: none;
+  width: 168px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(194, 194, 194, 0.2);
+  border: 1px solid #B9B9B9;
+  border-radius: 1px;
+  font-size: 12px;
+  line-height: 16px;
+  z-index: 5;
+}
+
+.tooltip-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: calc(100% - 2px);
+  width: 14px;
+  height: 100%;
+  padding: 10px 0 10px 10px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .submit-button {
   margin: 10px auto 0 auto;
+}
+
+.contacts {
+  padding: 64px;
+  background: url("../images/photos/contact-us-background.jpg") no-repeat center;
+  border-radius: 16px;
+}
+
+.contacts-wrapper {
+  padding: 40px;
+  width: 343px;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
 }
