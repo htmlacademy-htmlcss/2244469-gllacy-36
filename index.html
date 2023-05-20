@@ -6,7 +6,6 @@
     <title>Интернет-магазин Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body class="page-body">
     <div class="page-container">
       <header class="page-header">
@@ -424,7 +423,7 @@
               заказ.
             </p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="input-wrapper">
+              <div class="input-wrapper date-wrapper">
                 <label for="delivery-date" class="delivery-info-label">Дата</label>
                 <span class="tooltip date-tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
@@ -436,12 +435,12 @@
                 </span>
                 <input type="text" class="delivery-info-field date-field" name="delivery-date" id="delivery-date" placeholder="01.04.2020" required>
               </div>
-              <div class="input-wrapper">
+              <div class="input-wrapper phone-wrapper">
                 <label for="delivery-phone" class="delivery-info-label">Телефон</label>
                 <input type="tel" class="delivery-info-field phone-field" name="delivery-phone" id="delivery-phone"
                   pattern="+7 [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 800 999-00-00" required>
               </div>
-              <div class="input-wrapper">
+              <div class="input-wrapper address-wrapper">
                 <label for="delivery-address" class="delivery-info-label">Адрес</label>
                 <span class="tooltip address-tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-address">
@@ -461,12 +460,12 @@
         <section class="contacts">
           <h2 class="visually-hidden">Адрес и контакты.</h2>
           <div class="contacts-wrapper">
-            <p class="contacts-address-title">Адрес главного офиса и офлайн-магазина:</p>
-            <address class="contacts-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</address>
+            <p class="contacts-address-title">Адрес главного офиса и&nbsp;офлайн-магазина:</p>
+            <address class="contacts-address-text">наб. реки Карповки, 5&nbsp;лит&nbsp;П, Санкт-Петербург</address>
             <p class="contacts-tel-title">Для заказов по телефону:</p>
             <a class="contacts-order-phone" href="tel:+7812812-12-12">+7 (812) 812-12-12</a>
             <p class="contacts-working-time">(с 10 до 20 ежедневно)</p>
-            <a class="feedback-form-button" href="#">Форма обратной связи</a>
+            <a class="feedback-form-button button-additional" href="#">Форма обратной связи</a>
           </div>
         </section>
       </main>
@@ -493,7 +492,7 @@
         <div class="additional-info-wrapper">
           <ul class="additional-info-list">
             <li class="additional-info-item">
-              <a class="additional-info-link" href="#">Для поставщиков</a>
+              <a class="additional-info-link for-suppliers" href="#">Для поставщиков</a>
             </li>
             <li class="additional-info-item">
               <a class="additional-info-link" href="#">Наши документы</a>
@@ -507,7 +506,7 @@
           </ul>
         </div>
         <div class="developer-logo-wrapper">
-          <a class="developer-logo" href="https://htmlacademy.ru/">
+          <a class="developer-logo-link" href="https://htmlacademy.ru/">
             <img class="developer-logo" src="images/logos/htmlacademy-logo.svg" width="93" height="27"
               alt="Логотип разработчика: html academy.">
           </a>
@@ -519,6 +518,7 @@
     <div class="modal-container">
       <div class="modal-window">
         <h2 class="visually-hidden">Форма обратной связи.</h2>
+        <h3 class="feedback-form-heading">Мы обязательно ответим вам!</h3>
         <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="name-field" class="form-field-label visually-hidden">Введите имя и фамилию.</label>
           <input type="text" class="form-field-input" name="name-field" id="name-field" placeholder="Имя и фамилия"
@@ -529,7 +529,7 @@
           <label for="feedback-textarea" class="form-field-label visually-hidden">Введите сообщение.</label>
           <textarea class="form-textarea" id="feedback-textarea" name="message" placeholder="В свободной форме"
             required></textarea>
-          <button class="submit-button" type="submit">Отправить</button>
+          <button class="modal-submit-button button-additional" type="submit">Отправить</button>
         </form>
         <button class="modal-close" type="button">
           <span class="visually-hidden">Кнопка закрытия окна.</span>
@@ -537,5 +537,4 @@
       </div>
     </div>
   </body>
-
 </html>
