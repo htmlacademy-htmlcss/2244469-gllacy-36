@@ -122,7 +122,7 @@ html {
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  min-width: 422px;
+  width: 422px;
   max-width: 462px;
   margin: 0 164px 0 0;
   padding: 0;
@@ -629,6 +629,7 @@ textarea:disabled:hover::placeholder {
 }
 
 .button-additional {
+  display: inline-block;
   padding: 12px 32px;
   min-width: 113px;
   max-width: 260px;
@@ -1177,6 +1178,10 @@ textarea:disabled:hover::placeholder {
   opacity: 0.5;
 }
 
+.bonus-items {
+  margin: 0 0 80px 0;
+}
+
 .bonus-items-title {
   margin: 0 0 55px 0;
   padding: 0 300px;
@@ -1200,7 +1205,7 @@ textarea:disabled:hover::placeholder {
 .bonus-item {
   display: block;
   width: 570px;
-  margin: 0 0 80px 0;
+  margin: 0;
   padding: 36px 216px 36px 36px;
   color: #2D3440;
   background-color: #FF7799;
@@ -1250,6 +1255,8 @@ textarea:disabled:hover::placeholder {
   position: relative;
   margin: 0;
   padding: 0 40px 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-list-item::after {
@@ -1318,6 +1325,7 @@ textarea:disabled:hover::placeholder {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
 }
 
 .add-to-cart {
@@ -1372,7 +1380,7 @@ textarea:disabled:hover::placeholder {
 .about-us {
   margin: 0 0 80px 0;
   padding: 24px;
-  background: url("../images/photos/waffle-background-cut.jpg");
+  background: url("../images/photos/waffle-background-cut.jpg") repeat 0 0;
   border-radius: 16px;
 }
 
@@ -1443,7 +1451,8 @@ textarea:disabled:hover::placeholder {
 
 .news-blog {
   padding: 33px 230px 68px 32px;
-  background: rgba(255, 255, 255, 1) url("../images/photos/news-blog-background.jpg") no-repeat center top;
+  background: #EDEDEF url("../images/photos/news-blog-background-full.jpg") no-repeat right top;
+  background-size: cover;
   border-radius: 16px;
 }
 
@@ -1468,12 +1477,13 @@ textarea:disabled:hover::placeholder {
 
 .newsletter {
   padding: 6px;
-  background: rgba(255, 255, 255, 1) url("../images/photos/subscription-background-cut.jpg");
+  background: rgba(255, 255, 255, 1) url("../images/photos/subscription-background-cut.jpg") repeat 0 0;
   border-radius: 16px;
 }
 
 .newsletter-wrapper {
   padding: 26px;
+  height: 100%;
   background-color: #FFFFFF;
   border-radius: 16px;
 }
@@ -1495,10 +1505,11 @@ textarea:disabled:hover::placeholder {
 .delivery-service {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 30px 50px;
   margin: 0 0 80px 0;
   padding: 62px 64px 62px 100px;
-  background: #F6F6F7 url("../images/photos/delivery-background.jpg") no-repeat center top;
+  background: #EDEDEF url("../images/photos/delivery-background-full.jpg") no-repeat left center;
   border-radius: 16px;
 }
 
@@ -1692,7 +1703,8 @@ textarea:disabled:hover::placeholder {
 
 .contacts {
   padding: 64px;
-  background: url("../images/photos/contact-us-background.jpg") no-repeat center;
+  background: #EDEDEF url("../images/photos/contact-us-background-full.jpg") no-repeat right center;
+  background-size: cover;
   border-radius: 16px;
 }
 
