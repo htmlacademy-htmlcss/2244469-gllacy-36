@@ -2331,6 +2331,29 @@ textarea:disabled:hover::placeholder {
   background: url("../images/checkbox-ticked.svg") no-repeat center;
 }
 
+.checkbox-button:hover::before {
+  background: url("../images/checkbox-empty-hover.svg") no-repeat center;
+}
+
+.filter-checkbox:checked + .checkbox-button:hover::after {
+  background: url("../images/checkbox-ticked-hover.svg") no-repeat center;
+}
+
+.filter-checkbox:disabled + .checkbox-button::before,
+.filter-checkbox:checked:disabled + .checkbox-button::after {
+  opacity: 0.5;
+}
+
+.filter-checkbox:disabled:hover + .checkbox-button::before{
+  background: url("../images/checkbox-empty.svg") no-repeat center;
+  opacity: 0.5;
+}
+
+.filter-checkbox:checked:disabled:hover + .checkbox-button::after {
+  background: url("../images/checkbox-ticked.svg") no-repeat center;
+  opacity: 0.5;
+}
+
 .filter-submit-button {
   display: inline-block;
   align-self: flex-end;
