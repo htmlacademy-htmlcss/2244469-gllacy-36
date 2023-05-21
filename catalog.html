@@ -6,6 +6,7 @@
     <title>Интернет-магазин Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body class="page-body">
     <div class="page-container">
       <header class="page-header">
@@ -176,7 +177,7 @@
         <section class="sorting-filters">
           <h2 class="visually-hidden">Сортировка и фильтры</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter">
+            <fieldset class="catalog-filter-sorting">
               <legend class="catalog-filter-group-title">Сортировка:</legend>
               <label for="sorting-options" class="visually-hidden">Выбор параметров сортировки товаров.</label>
               <select class="sort-by" name="sorting-options" id="sorting-options">
@@ -186,13 +187,17 @@
               </select>
             </fieldset>
             <fieldset class="catalog-filter-first-group">
-              <legend class="catalog-filter-group-title">Цена:</legend>
-              <label>
-                <input class="filter-price-input min-price" type="number" name="min-price" value="100" min="0">₽
-              </label>
-              <label>
-                - <input class="filter-price-input max-price" type="number" name="max-price" value="500" min="0">₽
-              </label>
+              <div class="price-text-wrapper">
+                <legend class="catalog-filter-group-title">Цена:</legend>
+                <label class="price-label">
+                  <input class="filter-price-input min-price" type="number" name="min-price" value="100" min="0">
+                  <span class="min">₽</span>
+                </label>
+                <label class="price-label">
+                  – <input class="filter-price-input max-price" type="number" name="max-price" value="500" min="0">
+                  <span class="max">₽</span>
+                </label>
+              </div>
               <div class="price-range-wrapper">
                 <div class="range-scale">
                   <div class="range-bar">
@@ -274,8 +279,8 @@
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">310 ₽/кг</p>
                 <button class="add-to-cart" type="button">
-                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor"
-                    viewBox="0 0 16 17" role="img">
+                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                    fill="currentColor" viewBox="0 0 16 17" role="img">
                     <path fill="currentColor" fill-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       clip-rule="evenodd" />
@@ -293,8 +298,8 @@
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">340 ₽/кг</p>
                 <button class="add-to-cart" type="button">
-                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor"
-                    viewBox="0 0 16 17" role="img">
+                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                    fill="currentColor" viewBox="0 0 16 17" role="img">
                     <path fill="currentColor" fill-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       clip-rule="evenodd" />
@@ -313,8 +318,8 @@
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">330 ₽/кг</p>
                 <button class="add-to-cart" type="button">
-                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor"
-                    viewBox="0 0 16 17" role="img">
+                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                    fill="currentColor" viewBox="0 0 16 17" role="img">
                     <path fill="currentColor" fill-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       clip-rule="evenodd" />
@@ -333,8 +338,8 @@
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">320 ₽/кг</p>
                 <button class="add-to-cart" type="button">
-                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor"
-                    viewBox="0 0 16 17" role="img">
+                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                    fill="currentColor" viewBox="0 0 16 17" role="img">
                     <path fill="currentColor" fill-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       clip-rule="evenodd" />
@@ -353,8 +358,8 @@
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">330 ₽/кг</p>
                 <button class="add-to-cart" type="button">
-                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor"
-                    viewBox="0 0 16 17" role="img">
+                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                    fill="currentColor" viewBox="0 0 16 17" role="img">
                     <path fill="currentColor" fill-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       clip-rule="evenodd" />
@@ -373,8 +378,8 @@
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">340 ₽/кг</p>
                 <button class="add-to-cart" type="button">
-                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor"
-                    viewBox="0 0 16 17" role="img">
+                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                    fill="currentColor" viewBox="0 0 16 17" role="img">
                     <path fill="currentColor" fill-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       clip-rule="evenodd" />
@@ -393,8 +398,8 @@
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">270 ₽/кг</p>
                 <button class="add-to-cart" type="button">
-                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor"
-                    viewBox="0 0 16 17" role="img">
+                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                    fill="currentColor" viewBox="0 0 16 17" role="img">
                     <path fill="currentColor" fill-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       clip-rule="evenodd" />
@@ -413,8 +418,8 @@
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">300 ₽/кг</p>
                 <button class="add-to-cart" type="button">
-                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor"
-                    viewBox="0 0 16 17" role="img">
+                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                    fill="currentColor" viewBox="0 0 16 17" role="img">
                     <path fill="currentColor" fill-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       clip-rule="evenodd" />
@@ -433,8 +438,8 @@
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">310 ₽/кг</p>
                 <button class="add-to-cart" type="button">
-                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor"
-                    viewBox="0 0 16 17" role="img">
+                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                    fill="currentColor" viewBox="0 0 16 17" role="img">
                     <path fill="currentColor" fill-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       clip-rule="evenodd" />
@@ -453,8 +458,8 @@
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">320 ₽/кг</p>
                 <button class="add-to-cart" type="button">
-                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor"
-                    viewBox="0 0 16 17" role="img">
+                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                    fill="currentColor" viewBox="0 0 16 17" role="img">
                     <path fill="currentColor" fill-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       clip-rule="evenodd" />
@@ -473,8 +478,8 @@
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">360 ₽/кг</p>
                 <button class="add-to-cart" type="button">
-                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor"
-                    viewBox="0 0 16 17" role="img">
+                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                    fill="currentColor" viewBox="0 0 16 17" role="img">
                     <path fill="currentColor" fill-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       clip-rule="evenodd" />
@@ -493,8 +498,8 @@
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">280 ₽/кг</p>
                 <button class="add-to-cart" type="button">
-                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor"
-                    viewBox="0 0 16 17" role="img">
+                  <svg class="cart-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                    fill="currentColor" viewBox="0 0 16 17" role="img">
                     <path fill="currentColor" fill-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       clip-rule="evenodd" />
