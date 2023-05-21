@@ -92,6 +92,8 @@ html {
 .navigation-page-logo {
   display: block;
   margin: 0 16px 0 0;
+  border: 2px solid transparent;
+  border-radius: 10px;
 }
 
 .navigation-page-logo:hover {
@@ -116,7 +118,8 @@ html {
 
 .site-navigation {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  margin: 10px 0;
 }
 
 .products-list {
@@ -321,6 +324,7 @@ html {
   flex-wrap: wrap;
   align-items: center;
   gap: 0 16px;
+  width: 300px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -660,6 +664,7 @@ textarea:disabled:hover::placeholder {
   line-height: 20px;
   font-weight: 700;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -1062,6 +1067,7 @@ textarea:disabled:hover::placeholder {
   line-height: 20px;
   font-weight: 700;
   text-decoration: none;
+  text-align: center;
 }
 
 .button-main:hover {
@@ -2271,6 +2277,7 @@ textarea:disabled:hover::placeholder {
   width: 16px;
   height: 16px;
   background: url("../images/radio-button-circle.svg") no-repeat center;
+  border-radius: 50%;
 }
 
 .filter-radio:checked + .radio-button::after {
@@ -2286,6 +2293,18 @@ textarea:disabled:hover::placeholder {
 
 .radio-button:hover::before {
   background: url("../images/radio-button-empty-hover.svg") no-repeat center;
+}
+
+.filter-radio:focus + .radio-button::before {
+  outline: 2px solid #565C66;
+}
+
+.filter-radio:focus:not(:focus-visible) + .radio-button::before {
+  outline: transparent;
+}
+
+.filter-radio:focus-visible + .radio-button::before {
+  outline: 2px solid #565C66;
 }
 
 .filter-radio:checked + .radio-button:hover::after {
@@ -2312,9 +2331,10 @@ textarea:disabled:hover::placeholder {
   position: absolute;
   top: 3px;
   left: 0;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   background: url("../images/checkbox-empty.svg") no-repeat center;
+  border-radius: 4px;
 }
 
 .filter-checkbox:checked + .checkbox-button::before {
@@ -2326,9 +2346,10 @@ textarea:disabled:hover::placeholder {
   position: absolute;
   top: 3px;
   left: 0;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   background: url("../images/checkbox-ticked.svg") no-repeat center;
+  border-radius: 4px;
 }
 
 .checkbox-button:hover::before {
@@ -2337,6 +2358,21 @@ textarea:disabled:hover::placeholder {
 
 .filter-checkbox:checked + .checkbox-button:hover::after {
   background: url("../images/checkbox-ticked-hover.svg") no-repeat center;
+}
+
+.filter-checkbox:focus + .checkbox-button::before,
+.filter-checkbox:focus + .checkbox-button::after {
+  outline: 2px solid #565C66;
+}
+
+.filter-checkbox:focus:not(:focus-visible) + .checkbox-button::before,
+.filter-checkbox:focus:not(:focus-visible) + .checkbox-button::after {
+  outline: transparent;
+}
+
+.filter-checkbox:focus-visible + .checkbox-button::before,
+.filter-checkbox:focus-visible + .checkbox-button::after {
+  outline: 2px solid #565C66;
 }
 
 .filter-checkbox:disabled + .checkbox-button::before,
@@ -2401,4 +2437,127 @@ textarea:disabled:hover::placeholder {
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #FCFCFC;
   opacity: 0.4;
+}
+
+.catalog-list-show-more {
+  margin: 0 0 0 484px;
+}
+
+.button-pagination-wrapper {
+  margin: 0 0 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-wrapper {
+  margin: 0 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 170px;
+  max-width: 300px;
+}
+
+.previous-page-button,
+.next-page-button {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  color: #2D3440;
+}
+
+.previous-page-button {
+  background: url("../images/arrow-left.svg") no-repeat center;
+}
+
+.next-page-button {
+  background: url("../images/arrow-right.svg") no-repeat center;
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item {
+  min-width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+.pagination-link {
+  display: block;
+  padding: 2px;
+  min-width: 24px;
+  height: 24px;
+  color: #2D3440;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.pagination-current {
+  background-color: #FCFCFC;
+}
+
+.previous-page-button:hover,
+.next-page-button:hover,
+.pagination-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.previous-page-button:focus,
+.next-page-button:focus,
+.pagination-link:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 1px solid #2D3440;
+  outline: transparent;
+}
+
+.previous-page-button:focus:not(:focus-visible),
+.next-page-button:focus:not(:focus-visible),
+.pagination-link:focus:not(:focus-visible) {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 1px solid #FCFCFC;
+  outline: transparent;
+}
+
+.previous-page-button:focus-visible,
+.next-page-button:focus-visible,
+.pagination-link:focus-visible {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 1px solid #2D3440;
+  outline: transparent;
+}
+
+.previous-page-button:active,
+.next-page-button:active,
+.pagination-link:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 1px solid #FCFCFC;
+}
+
+.button-inactive {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.button-inactive:hover,
+.button-inactive:focus,
+.button-inactive:focus:not(:focus-visible),
+.button-inactive:focus-visible,
+.button-inactive:active {
+  background-color: transparent;
+  color: #2D3440;
+  border: 1px solid transparent;
+  opacity: 0.3;
 }
