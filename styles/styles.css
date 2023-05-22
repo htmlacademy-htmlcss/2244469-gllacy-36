@@ -75,6 +75,7 @@ html {
   min-height: 100%;
   margin: 0 auto;
   width: 1170px;
+  flex-grow: 1;
 }
 
 .main-page {
