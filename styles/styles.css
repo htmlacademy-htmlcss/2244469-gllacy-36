@@ -290,17 +290,19 @@ html {
   outline: transparent;
 }
 
+.contacts-phone-wrapper {
+  width: 156px;
+  margin: 0 8px 0 0;
+}
+
 .contacts-phone {
   display: block;
-  margin: 0 14px 0 0;
   padding: 8px 0;
-  width: 150px;
   line-height: 20px;
   font-weight: 700;
   color: #2D3440;
   border-radius: 16px;
   text-decoration: none;
-  white-space: nowrap;
 }
 
 .contacts-phone:hover {
@@ -883,10 +885,11 @@ textarea:disabled:hover::placeholder {
   display: flex;
   align-items: center;
   margin: 62px 0 0 0;
+  gap: 10px 16px;
 }
 
 .total-price {
-  margin: 0 0 0 auto;
+  margin: 0;
   color: #2D3440;
   font-size: 18px;
   font-weight: 700;
@@ -1132,7 +1135,7 @@ textarea:disabled:hover::placeholder {
   display: flex;
   justify-content: flex-start;
   gap: 0 8px;
-  max-width: 156px;
+  max-width: 200px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1381,6 +1384,7 @@ textarea:disabled:hover::placeholder {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
+  gap: 10px;
 }
 
 .add-to-cart {
