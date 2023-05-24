@@ -329,7 +329,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0 17px;
+  gap: 8px 17px;
   width: 300px;
   margin: 0;
   padding: 0;
@@ -1308,7 +1308,7 @@ textarea:disabled:hover::placeholder {
 .catalog-list-item {
   position: relative;
   margin: 0;
-  padding: 1px 40px 22px;
+  padding: 0 40px 23px;
   display: flex;
   flex-direction: column;
 }
@@ -2168,7 +2168,7 @@ textarea:disabled:hover::placeholder {
 }
 
 .sorting-filters {
-  margin: 0 0 46px 0;
+  margin: 0 0 47px 0;
 }
 
 .catalog-filter {
