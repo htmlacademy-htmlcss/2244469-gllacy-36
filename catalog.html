@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Глейси</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body class="page-body">
     <div class="page-container">
       <header class="page-header">
@@ -84,10 +83,10 @@
                   <h2 class="login-popover-heading">Личный кабинет</h2>
                   <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
                     <label for="login-email" class="visually-hidden">Ваш e-mail.</label>
-                    <input type="email" class="login-field email-field" id="login-email" placeholder="email@example.com"
+                    <input type="email" class="login-field email-field" id="login-email" value="email@example.com"
                       required>
                     <label for="login-password" class="visually-hidden">Ваш пароль.</label>
-                    <input type="password" class="login-field password-field" id="login-password" placeholder="123456"
+                    <input type="password" class="login-field password-field" id="login-password" value="123456"
                       required>
                     <div class="login-button-options-wrapper">
                       <button class="login-window-button button-additional" type="submit">Войти</button>
@@ -268,14 +267,14 @@
         </section>
         <section class="catalog-list-container">
           <h2 class="visually-hidden">Список товаров.</h2>
-          <ul class="catalog-list">
+          <ul class="catalog-list catalog-page-catalog">
             <li class="catalog-list-item">
               <a class="catalog-item-link" href="#">
                 <img class="catalog-item-image" src="images/photos/catalog-raspberry.jpg" width="168" height="168"
                   alt="Малиновое мороженое.">
                 <h3 class="catalog-item-title">Малинка</h3>
               </a>
-              <p class="catalog-item-info">Сливочное мороженое с малиновым джемом</p>
+              <p class="catalog-item-info">Сливочное мороженое с&nbsp;малиновым джемом</p>
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">310 ₽/кг</p>
                 <button class="add-to-cart" type="button">
@@ -294,7 +293,7 @@
                   alt="Фисташковое мороженое.">
                 <h3 class="catalog-item-title">Фисташка</h3>
               </a>
-              <p class="catalog-item-info">Фисташковый пломбир с кусочками шоколада</p>
+              <p class="catalog-item-info">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">340 ₽/кг</p>
                 <button class="add-to-cart" type="button">
@@ -310,11 +309,11 @@
             </li>
             <li class="catalog-list-item">
               <a class="catalog-item-link" href="#">
-                <img class="catalog-item-image" src="images/photos/catalog-blackberry.jpg" width="168" height="168"
+                <img class="catalog-item-image" src="images/photos/catalog-blueberry.jpg" width="168" height="168"
                   alt="Черничное мороженое.">
                 <h3 class="catalog-item-title">Черника</h3>
               </a>
-              <p class="catalog-item-info">Крем-брюле с черничным джемом</p>
+              <p class="catalog-item-info">Крем-брюле с&nbsp;черничным джемом</p>
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">330 ₽/кг</p>
                 <button class="add-to-cart" type="button">
@@ -334,7 +333,7 @@
                   alt="Мороженое бабл-гам.">
                 <h3 class="catalog-item-title">Бабл-гам</h3>
               </a>
-              <p class="catalog-item-info">Ванильный пломбир со сладкой посыпкой</p>
+              <p class="catalog-item-info">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">320 ₽/кг</p>
                 <button class="add-to-cart" type="button">
@@ -354,7 +353,7 @@
                   alt="Ежевичное мороженое.">
                 <h3 class="catalog-item-title">Ежевика</h3>
               </a>
-              <p class="catalog-item-info">Сливочное мороженое с ежевичным джемом</p>
+              <p class="catalog-item-info">Сливочное мороженое с&nbsp;ежевичным джемом</p>
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">330 ₽/кг</p>
                 <button class="add-to-cart" type="button">
@@ -374,7 +373,7 @@
                   alt="Банановое мороженое.">
                 <h3 class="catalog-item-title">Банан</h3>
               </a>
-              <p class="catalog-item-info">Сливочный пломбир с банановым вкусом</p>
+              <p class="catalog-item-info">Сливочный пломбир с&nbsp;банановым вкусом</p>
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">340 ₽/кг</p>
                 <button class="add-to-cart" type="button">
@@ -414,7 +413,7 @@
                   alt="Клубничное мороженое.">
                 <h3 class="catalog-item-title">Клубничка</h3>
               </a>
-              <p class="catalog-item-info">Сливочный пломбир с клубничным вкусом</p>
+              <p class="catalog-item-info">Сливочный пломбир с&nbsp;клубничным вкусом</p>
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">300 ₽/кг</p>
                 <button class="add-to-cart" type="button">
@@ -454,7 +453,7 @@
                   alt="Мятное мороженое.">
                 <h3 class="catalog-item-title">Ментол</h3>
               </a>
-              <p class="catalog-item-info">Сливочный пломбир с ментоловым сиропом</p>
+              <p class="catalog-item-info">Сливочный пломбир с&nbsp;ментоловым сиропом</p>
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">320 ₽/кг</p>
                 <button class="add-to-cart" type="button">
@@ -474,7 +473,7 @@
                   alt="Черничное мороженое.">
                 <h3 class="catalog-item-title">Орешек</h3>
               </a>
-              <p class="catalog-item-info">Фисташковый пломбир с шоколадным сиропом</p>
+              <p class="catalog-item-info">Фисташковый пломбир с&nbsp;шоколадным сиропом</p>
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">360 ₽/кг</p>
                 <button class="add-to-cart" type="button">
@@ -490,11 +489,11 @@
             </li>
             <li class="catalog-list-item">
               <a class="catalog-item-link" href="#">
-                <img class="catalog-item-image" src="images/photos/catalog-bubble-gum.jpg" width="168" height="168"
+                <img class="catalog-item-image" src="images/photos/catalog-creme-brulee.jpg" width="168" height="168"
                   alt="Мороженое бабл-гам.">
                 <h3 class="catalog-item-title">Крем-брюле</h3>
               </a>
-              <p class="catalog-item-info">Классическое крем-брюле </p>
+              <p class="catalog-item-info">Классическое крем&#8209;брюле </p>
               <div class="price-cart-wrapper">
                 <p class="catalog-item-price">280 ₽/кг</p>
                 <button class="add-to-cart" type="button">
@@ -553,7 +552,7 @@
       </main>
       <footer class="page-footer">
         <div class="contacts-social-wrapper">
-          <ul class="socila-list">
+          <ul class="social-list">
             <li class="social-item">
               <a class="social-item-button telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Мы в Телеграме.</span>
