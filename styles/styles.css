@@ -300,6 +300,7 @@ html {
   color: #2D3440;
   border-radius: 16px;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .contacts-phone:hover {
@@ -975,7 +976,7 @@ textarea:disabled:hover::placeholder {
 }
 
 .slider-text-wrapper {
-  margin: 130px 0 0 70px;
+  margin: 131px 0 0 70px;
   width: 446px;
 }
 
@@ -1307,7 +1308,7 @@ textarea:disabled:hover::placeholder {
 .catalog-list-item {
   position: relative;
   margin: 0;
-  padding: 0 40px 24px;
+  padding: 1px 40px 22px;
   display: flex;
   flex-direction: column;
 }
@@ -1318,7 +1319,7 @@ textarea:disabled:hover::placeholder {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 50px);
+  height: calc(100% - 52px);
   background-color: #FCFCFC;
   border-radius: 8px;
   z-index: -1;
@@ -1370,7 +1371,7 @@ textarea:disabled:hover::placeholder {
 }
 
 .catalog-item-info {
-  margin: 0 0 16px;
+  margin: 0 0 17px;
   text-align: center;
 }
 
@@ -1500,11 +1501,11 @@ textarea:disabled:hover::placeholder {
   display: grid;
   grid-template-columns: repeat(2, 570px);
   gap: 20px 30px;
-  margin: 0 0 81px 0;
+  margin: 0 0 80px 0;
 }
 
 .news-blog {
-  padding: 33px 230px 64px 29px;
+  padding: 33px 230px 67px 29px;
   background: #EDEDEF url("../images/photos/news-blog-background-full.jpg") no-repeat right top;
   background-size: cover;
   border-radius: 16px;
@@ -1589,13 +1590,13 @@ textarea:disabled:hover::placeholder {
   align-items: flex-start;
   gap: 30px 50px;
   margin: 0 0 80px 0;
-  padding: 65px 64px 65px 100px;
+  padding: 64px 64px 65px 100px;
   background: #EDEDEF url("../images/photos/delivery-background-full.jpg") no-repeat left 48%;
   border-radius: 16px;
 }
 
 .delivery-service-info-wrapper {
-  margin: 104px 0 auto 0;
+  margin: 103px 0 auto 0;
   width: 372px;
 }
 
@@ -1613,7 +1614,7 @@ textarea:disabled:hover::placeholder {
 
 .delivery-form-wrapper {
   margin: 0 0 0 auto;
-  padding: 40px 40px 38px 40px;
+  padding: 40px;
   width: 500px;
   background-color: #FCFCFC;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
@@ -1627,7 +1628,7 @@ textarea:disabled:hover::placeholder {
 .delivery-form {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px 16px;
+  gap: 19px 16px;
   align-items: center;
 }
 
@@ -1646,7 +1647,7 @@ textarea:disabled:hover::placeholder {
 
 .input-wrapper input {
   margin: 0;
-  padding: 14px 16px;
+  padding: 13px 16px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
   color: #2D3440;
@@ -1803,7 +1804,7 @@ textarea:disabled:hover::placeholder {
 
 .contacts-address-title,
 .contacts-tel-title {
-  margin: 0 0 11px 0;
+  margin: 0 0 12px 0;
 }
 
 .contacts-address-title {
