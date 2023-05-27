@@ -1198,12 +1198,20 @@ textarea:disabled:hover::placeholder {
   list-style-type: none;
 }
 
-.social-item-button {
+.social-item {
   display: block;
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  border: 2px solid rgba(252, 252, 252, 0.3);
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.social-item-button {
+  display: block;
+  margin: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
 }
 
 .telegram {
@@ -1220,28 +1228,29 @@ textarea:disabled:hover::placeholder {
 
 .social-item-button:hover {
   background-color: #2D3440;
-  border: 3px solid #FDD5DF;
+  border: 1px solid #FCFCFC;
 }
 
 .social-item-button:focus {
   background-color: #2D3440;
-  border: 2px solid #2D3440;
-  outline: transparent;
+  outline: 2px solid #2D3440;
+  outline-offset: -1px;
 }
 
 .social-item-button:focus:not(:focus-visible) {
-  border: 3px solid #FDD5DF;
   outline: transparent;
+  border: 1px solid #FCFCFC;
 }
 
 .social-item-button:focus-visible {
   background-color: #2D3440;
-  border: 2px solid #2D3440;
-  outline: transparent;
+  outline: 2px solid #2D3440;
+  outline-offset: -1px;
 }
 
 .social-item-button:active {
   background-color: #2D3440;
+  border: 1px solid #FCFCFC;
   opacity: 0.5;
 }
 
@@ -1750,8 +1759,8 @@ textarea:disabled:hover::placeholder {
 .tooltip-text {
   position: absolute;
   top: -11px;
-  left: 21px;
-  padding: 9px 8px;
+  left: 22px;
+  padding: 10px 9px;
   display: none;
   width: 166px;
   background-color: #FCFCFC;
@@ -1766,22 +1775,14 @@ textarea:disabled:hover::placeholder {
 .tooltip-text::before {
   content: "";
   position: absolute;
-  top: -6px;
-  left: -7px;
+  top: 12px;
+  left: -5px;
   width: 8px;
-  height: 100%;
-  padding: 12px 0 12px 10px;
-  background: url("../images/tooltip-triangle.svg") no-repeat center;
-}
-
-.tooltip-text::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: calc(100% - 4px);
+  height: 8px;
   background-color: #FCFCFC;
+  rotate: 45deg;
+  border-left: 1px solid #B9B9B9;
+  border-bottom: 1px solid #B9B9B9;
 }
 
 .tooltip:hover .tooltip-text,
