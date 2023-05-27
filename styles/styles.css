@@ -122,14 +122,14 @@ html {
   display: flex;
   align-items: flex-start;
   margin: 10px 0;
+  width: 1015px;
 }
 
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  width: 422px;
-  max-width: 462px;
-  margin: 0 164px 0 0;
+  width: 532px;
+  margin: 0 auto 0 0;
   padding: 0;
   list-style-type: none;
 }
@@ -291,8 +291,8 @@ html {
 }
 
 .contacts-phone-wrapper {
-  width: 156px;
-  margin: 0 8px 0 0;
+  min-width: 150px;
+  margin: 0 16px 0 0;
 }
 
 .contacts-phone {
@@ -303,6 +303,7 @@ html {
   color: #2D3440;
   border-radius: 16px;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .contacts-phone:hover {
@@ -331,8 +332,8 @@ html {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px 17px;
-  width: 300px;
+  gap: 8px 16px;
+  max-width: 270px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -811,7 +812,7 @@ textarea:disabled:hover::placeholder {
   display: flex;
   align-items: center;
   margin: 0 0 24px 0;
-  padding: 0 16px 0 0;
+  padding: 0 26px 0 0;
 }
 
 .cart-item:last-child::after {
@@ -1560,7 +1561,7 @@ textarea:disabled:hover::placeholder {
 
 .newsletter {
   padding: 6px;
-  background: rgba(255, 255, 255, 1) url("../images/photos/subscription-background-cut.jpg") repeat 0 0;
+  background: rgba(255, 255, 255, 1) url("../images/photos/subscription-background-cut.jpg") repeat 53px 0;
   border-radius: 16px;
 }
 
@@ -1626,24 +1627,27 @@ textarea:disabled:hover::placeholder {
 }
 
 .delivery-form-info {
-  margin: 0 0 33px 0;
+  margin: 0 0 30px 0;
 }
 
 .delivery-form {
   display: flex;
   flex-wrap: wrap;
   gap: 19px 16px;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .input-wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 8px 0;
 }
 
 .delivery-info-label {
+  position: relative;
+}
+
+.delivery-info-label-title {
   color: #2D3440;
   line-height: 20px;
   font-weight: 700;
@@ -1676,7 +1680,7 @@ textarea:disabled:hover::placeholder {
 
 .tooltip {
   position: absolute;
-  top: 3px;
+  top: 5px;
   width: 34px;
   height: 24px;
 }
@@ -1759,7 +1763,7 @@ textarea:disabled:hover::placeholder {
 .tooltip-text::before {
   content: "";
   position: absolute;
-  top: calc(50% - 32px);
+  top: -6px;
   left: -7px;
   width: 8px;
   height: 100%;
@@ -1808,7 +1812,7 @@ textarea:disabled:hover::placeholder {
 
 .contacts-address-title,
 .contacts-tel-title {
-  margin: 0 0 12px 0;
+  margin: 0 0 11px 0;
 }
 
 .contacts-address-title {
@@ -1905,7 +1909,7 @@ textarea:disabled:hover::placeholder {
 .for-suppliers::before {
   content: "";
   position: absolute;
-  top: calc(50% - 8px);
+  bottom: calc(100% - 18px);
   left: -24px;
   width: 16px;
   height: 16px;
@@ -2545,7 +2549,7 @@ textarea:disabled:hover::placeholder {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 20px 60px;
 }
 
 .pagination-wrapper {
@@ -2553,7 +2557,7 @@ textarea:disabled:hover::placeholder {
   display: flex;
   align-items: center;
   gap: 8px 0;
-  width: 170px;
+  min-width: 170px;
   max-width: 300px;
 }
 
