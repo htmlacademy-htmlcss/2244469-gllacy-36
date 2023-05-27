@@ -1679,18 +1679,11 @@ textarea:disabled:hover::placeholder {
 }
 
 .tooltip {
-  position: absolute;
-  top: 5px;
+  position: relative;
+  top: 4px;
+  left: 4px;
   width: 34px;
   height: 24px;
-}
-
-.date-tooltip {
-  left: 44px;
-}
-
-.address-tooltip {
-  left: 56px;
 }
 
 .tooltip-toggle {
@@ -1746,8 +1739,8 @@ textarea:disabled:hover::placeholder {
 
 .tooltip-text {
   position: absolute;
-  top: -10px;
-  left: 22px;
+  top: -11px;
+  left: 21px;
   padding: 9px 8px;
   display: none;
   width: 166px;
