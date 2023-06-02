@@ -1056,7 +1056,8 @@ textarea:disabled:hover::placeholder {
 }
 
 .slider-active .slider-image-wrapper {
-  padding: 14px 0 0 0;
+  padding: 14px 14px 0 0;
+  width: 350px;
 }
 
 .slider-image-wrapper::after {
