@@ -1374,7 +1374,7 @@ textarea:disabled:hover::placeholder {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 52px);
+  height: calc(100% - 51px);
   background-color: #FCFCFC;
   border-radius: 8px;
   z-index: -1;
@@ -1562,7 +1562,7 @@ textarea:disabled:hover::placeholder {
 }
 
 .news-blog {
-  padding: 33px 230px 67px 29px;
+  padding: 33px 230px 66px 29px;
   background: #EDEDEF url("../images/photos/news-blog-background-full.jpg") no-repeat right top;
   background-size: cover;
   border-radius: 16px;
