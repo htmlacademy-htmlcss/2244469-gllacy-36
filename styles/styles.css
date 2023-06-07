@@ -1432,11 +1432,11 @@ textarea:disabled:hover::placeholder {
 }
 
 .price-cart-wrapper {
+  margin-top: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  flex-grow: 1;
   gap: 10px;
 }
 
