@@ -100,25 +100,25 @@ body {
   border-radius: 10px;
 }
 
-.navigation-page-logo:hover {
+.navigation-page-logo[href]:hover {
   opacity: 0.6;
 }
 
-.navigation-page-logo:focus {
+.navigation-page-logo[href]:focus {
   outline: 2px solid #2D3440;
   outline-offset: 2px;
 }
 
-.navigation-page-logo:focus:not(:focus-visible) {
+.navigation-page-logo[href]:focus:not(:focus-visible) {
   outline: transparent;
 }
 
-.navigation-page-logo:focus-visible {
+.navigation-page-logo[href]:focus-visible {
   outline: 2px solid #2D3440;
   outline-offset: 2px;
 }
 
-.navigation-page-logo:active {
+.navigation-page-logo[href]:active {
   opacity: 0.3;
 }
 
