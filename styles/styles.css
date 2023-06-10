@@ -115,7 +115,7 @@ body {
 
 .navigation-page-logo[href]:focus {
   outline: 2px solid #2D3440;
-  outline-offset: 2px;
+  outline-offset: 1px;
 }
 
 .navigation-page-logo[href]:focus:not(:focus-visible) {
@@ -124,7 +124,7 @@ body {
 
 .navigation-page-logo[href]:focus-visible {
   outline: 2px solid #2D3440;
-  outline-offset: 2px;
+  outline-offset: 1px;
 }
 
 .navigation-page-logo[href]:active {
@@ -165,7 +165,7 @@ body {
 .products-item-link:focus {
   background-color: rgba(252, 252, 252, 0.5);
   outline: 2px solid #2D3440;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .products-item-link:focus:not(:focus-visible) {
@@ -175,7 +175,7 @@ body {
 .products-item-link:focus-visible {
   background-color: #FFCBD8;
   outline: 2px solid #000000;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .products-item-link:active {
@@ -209,7 +209,7 @@ body {
 
 .catalog-menu-button:focus {
   outline: 2px solid #000000;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .catalog-menu-button:focus:not(:focus-visible) {
@@ -218,7 +218,7 @@ body {
 
 .catalog-menu-button:focus-visible {
   outline: 2px solid #000000;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .catalog-menu-button:active {
@@ -285,7 +285,7 @@ body {
 .catalog-menu-link:focus {
   background-color: #FFCBD8;
   outline: 2px solid #000000;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .catalog-menu-link:focus:not(:focus-visible) {
@@ -295,7 +295,7 @@ body {
 .catalog-menu-link:focus-visible {
   background-color: #FFCBD8;
   outline: 2px solid #000000;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .catalog-menu-link:active {
@@ -325,7 +325,7 @@ body {
 
 .contacts-phone:focus {
   outline: 2px solid #2D3440;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .contacts-phone:focus:not(:focus-visible) {
@@ -334,7 +334,7 @@ body {
 
 .contacts-phone:focus-visible {
   outline: 2px solid #2D3440;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .contacts-phone:active {
@@ -373,7 +373,7 @@ body {
   background-color: #FF4A78;
   color: #FCFCFC;
   outline: 2px solid #000000;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .search-button:focus:not(:focus-visible) {
@@ -384,7 +384,7 @@ body {
   background-color: #FF4A78;
   color: #FCFCFC;
   outline: 2px solid #000000;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .search-button:active {
@@ -463,7 +463,7 @@ input:not(:placeholder-shown):invalid {
 
 input:not(:placeholder-shown):invalid:hover {
   outline: 2px solid #EA5454;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 input:hover,
@@ -475,7 +475,7 @@ textarea:hover {
 input:focus,
 textarea:focus {
   outline: 2px solid #2D3440;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 input:disabled,
@@ -535,7 +535,7 @@ textarea:disabled:hover::placeholder {
   background-color: #FF4A78;
   color: #FCFCFC;
   outline: 2px solid #000000;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .navigation-item-link:focus:not(:focus-visible) {
@@ -548,7 +548,7 @@ textarea:disabled:hover::placeholder {
   background-color: #FF4A78;
   color: #FCFCFC;
   outline: 2px solid #000000;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .navigation-item-link:active {
@@ -629,13 +629,13 @@ textarea:disabled:hover::placeholder {
 
 .login-field:focus {
   outline: 2px solid #2D3440;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .login-field:disabled {
   background-color: #E7E7E7;
   outline: 1px solid #B9B9B9;
-  outline-offset: -1px;
+  outline-offset: -2px;
   color: rgba(45, 52, 64, 0.65)
 }
 
@@ -688,7 +688,7 @@ textarea:disabled:hover::placeholder {
 .button-additional:focus:not(:focus-visible) {
   background-color: #FEAFC3;
   outline: 2px solid #2D3440;
-  outline-offset: -2px;
+  outline-offset: -1px;
 }
 
 .button-additional:focus-visible {

@@ -7,6 +7,17 @@ const previous = document.querySelector('.button-previous');
 const sliderItemsTags = document.querySelectorAll('.slider-item');
 const bullets = document.querySelectorAll('.dots');
 
+const sliderScreenLinks = document.querySelectorAll('.slider-item a');
+
+const setFocuses = () => {
+  sliderScreenLinks.forEach((link) => {
+    link.tabIndex = -1;
+  });
+
+  document.querySelectorAll('.slider-active a');
+  link.tabIndex = 0;
+};
+
 if (feedbackForm) {
   feedbackForm.addEventListener('click', function (importantEvent) {
     importantEvent.preventDefault();
@@ -40,6 +51,8 @@ const renderActiveScreen = (index) => {
 
   document.querySelector('.dots-active').classList.remove('dots-active');
   Array.from(bullets)[index].classList.add('dots-active');
+
+  setFocuses();
 }
 
 const getNextScreen = () => {
