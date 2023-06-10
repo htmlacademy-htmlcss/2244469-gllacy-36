@@ -22,6 +22,15 @@
   font-display: swap;
 }
 
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -715,6 +724,10 @@ textarea:disabled:hover::placeholder {
   width: 16px;
   height: 16px;
   background: url("../images/button-additional-loading-spinner.svg") no-repeat center;
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .login-options-wrapper {
