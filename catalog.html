@@ -176,7 +176,7 @@
           <h2 class="catalog-page-title">Сливочное мороженое</h2>
         </header>
         <section class="sorting-filters">
-          <h2 class="visually-hidden">Сортировка и фильтры</h2>
+          <h2 class="visually-hidden">Сортировка и фильтры.</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-sorting">
               <legend class="catalog-filter-group-title">Сортировка:</legend>
@@ -188,8 +188,9 @@
               </select>
             </fieldset>
             <fieldset class="catalog-filter-first-group">
+              <legend class="visually-hidden">Диапазон цены мороженого.</legend>
               <div class="price-text-wrapper">
-                <legend class="catalog-filter-group-title">Цена:</legend>
+                <span class="catalog-filter-group-title">Цена:</span>
                 <label class="price-label">
                   <input class="filter-price-input min-price" type="number" name="min-price" value="100" min="0">
                   <span class="min">₽</span>
@@ -288,6 +289,7 @@
                   </svg>
                   <span class="visually-hidden">Добавить в корзину.</span>
                 </button>
+              </div>
             </li>
             <li class="catalog-list-item">
               <a class="catalog-item-link" href="#">
@@ -514,8 +516,8 @@
             <a href="#" class="catalog-list-show-more button-main">Показать еще</a>
             <div class="pagination-wrapper">
               <a class="previous-page-button button-inactive" href="#">
-                <svg class="previous-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
-                  role="img">
+                <svg class="previous-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" viewBox="0 0 16 16" role="img">
                   <path fill="currentColor" fill-rule="evenodd"
                     d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z"
                     clip-rule="evenodd" />
@@ -540,8 +542,8 @@
                 </li>
               </ol>
               <a class="next-page-button" href="#">
-                <svg class="next-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
-                  role="img">
+                <svg class="next-button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" viewBox="0 0 16 16" role="img">
                   <path fill="currentColor" fill-rule="evenodd"
                     d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
                     clip-rule="evenodd" />
@@ -599,5 +601,4 @@
       </footer>
     </div>
   </body>
-
 </html>

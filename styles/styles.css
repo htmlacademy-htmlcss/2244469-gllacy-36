@@ -451,7 +451,6 @@ input::-webkit-inner-spin-button {
 
 input[type="number"] {
   -webkit-appearance: textfield;
-     -moz-appearance: textfield;
           appearance: textfield;
 }
 
@@ -501,7 +500,8 @@ textarea:disabled:hover::placeholder {
   padding: 0;
   border: none;
   cursor: pointer;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   background: url("../images/close-button.svg") no-repeat center;
 }
 
@@ -611,7 +611,8 @@ textarea:disabled:hover::placeholder {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .password-field {
@@ -662,7 +663,8 @@ textarea:disabled:hover::placeholder {
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   outline: 4px solid #F7BACA;
   outline-offset: -2px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -936,7 +938,8 @@ textarea:disabled:hover::placeholder {
   width: 16px;
   height: 16px;
   background: #FCFCFC url("../images/close-button.svg") no-repeat center;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -979,7 +982,8 @@ textarea:disabled:hover::placeholder {
   background: rgba(252, 252, 252, 0.3) url("../images/slider-button-arrow-previous.svg") no-repeat 13px 11px;
   border: 2px solid #FCFCFC;
   border-radius: 26px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   cursor: pointer;
   z-index: 5;
 }
@@ -1062,7 +1066,7 @@ textarea:disabled:hover::placeholder {
 
 .slider-image-wrapper {
   position: relative;
-  padding: 20px 0 0 5px;
+  padding: 20px 0 0 0;
   display: flex;
   align-items: center;
   width: 100px;
@@ -1205,7 +1209,8 @@ textarea:disabled:hover::placeholder {
   border: none;
   border-radius: 100px;
   background-color: rgba(252, 252, 252, 0.3);
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 
@@ -1460,7 +1465,8 @@ textarea:disabled:hover::placeholder {
   background-color: #FF2F64;
   color: #FCFCFC;
   border-radius: 26px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   border: 2px solid transparent;
   cursor: pointer;
 }
@@ -1651,7 +1657,8 @@ textarea:disabled:hover::placeholder {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .delivery-service {
@@ -1660,7 +1667,7 @@ textarea:disabled:hover::placeholder {
   align-items: flex-start;
   gap: 30px 50px;
   margin: 0 0 80px 0;
-  padding: 64px 64px 65px 100px;
+  padding: 64px 64px 63px 100px;
   background: #EDEDEF url("../images/photos/delivery-background-full.jpg") no-repeat left 48%;
   border-radius: 16px;
 }
@@ -1759,7 +1766,8 @@ textarea:disabled:hover::placeholder {
   width: 30px;
   height: 30px;
   background-color: transparent;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   border: none;
   cursor: pointer;
 }
@@ -1853,7 +1861,7 @@ textarea:disabled:hover::placeholder {
 }
 
 .contacts-wrapper {
-  padding: 40px;
+  padding: 40px 30px 40px 40px;
   width: 343px;
   background-color: #FCFCFC;
   border-radius: 8px;
@@ -1862,7 +1870,7 @@ textarea:disabled:hover::placeholder {
 
 .contacts-address-title,
 .contacts-tel-title {
-  margin: 0 0 11px 0;
+  margin: 0 0 10px 0;
 }
 
 .contacts-address-title {
@@ -1918,7 +1926,7 @@ textarea:disabled:hover::placeholder {
 
 .page-footer {
   display: flex;
-  padding: 48px 0 41px 0;
+  padding: 49px 0 41px 0;
 }
 
 .contacts-social-wrapper {
@@ -2124,7 +2132,8 @@ textarea:disabled:hover::placeholder {
   height: 24px;
   padding: 0;
   background: url("../images/modal-close-button.svg") no-repeat center;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   border: none;
   border-radius: 16px;
   cursor: pointer;
@@ -2214,6 +2223,7 @@ textarea:disabled:hover::placeholder {
 }
 
 .current-page {
+  padding-bottom: 0;
   border-bottom: 1px solid #2D3440;
 }
 
@@ -2232,7 +2242,7 @@ textarea:disabled:hover::placeholder {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
-  gap: 17px 24px;
+  gap: 14px 24px;
 }
 
 .catalog-filter,
@@ -2256,21 +2266,23 @@ textarea:disabled:hover::placeholder {
 }
 
 .sort-by {
-  padding: 8px 37px 8px 17px;
-  background: rgba(252, 252, 252, 0.3) url("../images/catalog-arrow-down.svg") no-repeat calc(100% - 13px) center;
+  padding: 8px 44px 8px 16px;
+  width: 196px;
+  background: rgba(252, 252, 252, 0.3) url("../images/catalog-arrow-down.svg") no-repeat calc(100% - 14px) center;
   color: #2D3440;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  appearance: none;
+  font-family: inherit;
+  -webkit-appearance: none;
+          appearance: none;
   border: none;
   border-radius: 20px;
   cursor: pointer;
 }
 
 .sort-by:hover {
-  background-color: #FCFCFC;
-  opacity: 0.5;
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .sort-by:focus {
@@ -2287,8 +2299,17 @@ textarea:disabled:hover::placeholder {
   font-weight: 400;
 }
 
+.catalog-filter-group-title {
+  margin: 0 2px 0 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
 .price-text-wrapper {
   display: flex;
+  margin: 0 2px 8px 16px;
 }
 
 .filter-price-input {
@@ -2302,7 +2323,8 @@ textarea:disabled:hover::placeholder {
   line-height: 20px;
   font-weight: 400;
   text-align: center;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .filter-price-input:hover {
@@ -2352,7 +2374,8 @@ textarea:disabled:hover::placeholder {
   background-color: #FCFCFC;
   border: 6px solid #2D3440;
   border-radius: 50%;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 
@@ -2382,7 +2405,8 @@ textarea:disabled:hover::placeholder {
 }
 
 .catalog-filter-second-group {
-  width: 384px;
+  min-width: 384px;
+  max-width: 440px;
 }
 
 .catalog-filter-list {
@@ -2390,7 +2414,7 @@ textarea:disabled:hover::placeholder {
   flex-wrap: wrap;
   gap: 4px 17px;
   margin: 0;
-  padding: 7px 24px;
+  padding: 8px 24px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
   list-style-type: none;
@@ -2545,7 +2569,8 @@ textarea:disabled:hover::placeholder {
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 
@@ -2582,12 +2607,12 @@ textarea:disabled:hover::placeholder {
 }
 
 .catalog-list-container {
-  padding: 0 0 38px 0;
+  padding: 0 0 35px 0;
   border-bottom: 1px solid rgba(252, 252, 252, 0.3);
 }
 
 .catalog-page-catalog {
-  margin: 0 0 56px 0;
+  margin: 0 0 54px 0;
 }
 
 .catalog-list-show-more {
@@ -2595,7 +2620,7 @@ textarea:disabled:hover::placeholder {
 }
 
 .button-pagination-wrapper {
-  margin: 0 0 40px 0;
+  margin: 0 0 42px 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -2603,7 +2628,7 @@ textarea:disabled:hover::placeholder {
 }
 
 .pagination-wrapper {
-  margin: 0 0 0 auto;
+  margin: 0 -3px 0 auto;
   display: flex;
   align-items: center;
   gap: 8px 0;
@@ -2614,19 +2639,20 @@ textarea:disabled:hover::placeholder {
 .previous-page-button,
 .next-page-button {
   display: block;
-  padding: 3px;
-  width: 24px;
-  height: 24px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
   border: 1px solid transparent;
   border-radius: 50px;
   color: #2D3440;
+  text-align: center;
 }
 
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
   gap: 4px 0;
-  margin: 0;
+  margin: 0 7px;
   padding: 0;
   list-style-type: none;
 }
@@ -2639,8 +2665,7 @@ textarea:disabled:hover::placeholder {
 
 .pagination-link {
   display: block;
-  padding: 2px;
-  min-width: 24px;
+  width: 24px;
   height: 24px;
   color: #2D3440;
   border: 1px solid transparent;
