@@ -87,8 +87,10 @@ body {
   flex-direction: column;
   min-height: 100%;
   margin: 0 auto;
+  padding: 0 40px;
   width: 1170px;
   flex-grow: 1;
+  box-sizing: content-box;
 }
 
 .main-page {
@@ -440,6 +442,7 @@ body {
 .form-field-input::placeholder,
 .form-textarea::placeholder {
   color: #b9b9b9;
+  opacity: 1;
 }
 
 .search-input::-webkit-search-cancel-button {
@@ -620,11 +623,12 @@ body {
 }
 
 .login-field {
-  padding: 13px 18px;
+  padding: 13px 14px;
   background-color: #ffffff;
   color: #2d3440;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -633,7 +637,8 @@ body {
 }
 
 .password-field {
-  letter-spacing: 2px;
+  font-family: initial;
+  letter-spacing: 0.15em;
 }
 
 .login-field::placeholder {
