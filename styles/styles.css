@@ -280,6 +280,11 @@ body {
   color: #2d3440;
 }
 
+.catalog-link-current {
+  background-color: #ff4a78;
+  color: #fcfcfc;
+}
+
 .catalog-menu-link:hover {
   background-color: #ffcbd8;
 }
